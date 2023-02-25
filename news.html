@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- generics -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/static/img/favicon_io/favicon-32.png" sizes="32x32">
+
+  <!-- Android -->
+  <link rel="shortcut icon" sizes="192x192" href=“/static/img/favicon_io/android-chrome-192.png">
+
+  <!-- iOS -->
+  <link rel="apple-touch-icon" href="/static/img/favicon_io/apple-touch-icon.png" sizes="180x180">
+
+  <!-- Windows 8 IE 10-->
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/static/img/favicon_io/favicon-144.png">
+
+  <!— Windows 8.1 + IE11 and above —>
+  <meta name="msapplication-config" content="/static/img/favicon_io/browserconfig.xml" />
+
+  <meta name = "viewport" content = "width=device-width, initial-scale = 1">
+  <title>News </title>
+  <meta name="Description" CONTENT="Fabrizio Sossan's personal webpage">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/static/materialize/css/materialize.min.css">
+  <script src="/static/materialize/js/materialize.min.js"></script>
+
+
+  <style>
+
+    /*.valign-wrapper {flex-wrap: wrap;}*/
+
+    a {
+      color: #009688;
+    }
+
+    h4, h5, h6 {
+      color: #004d40;
+    }
+
+    body,html {
+      color: #111111;
+      background-color: #DDDDDD11;
+      height: 100%;
+    }
+
+    .rps {
+      line-height: 125%;
+      margin-left: 5px;
+      text-align: center;
+    }
+
+    li.spacer {
+      flex: 1;
+    }
+
+    header, main, footer {
+      padding-left: 200px;
+    }
+
+    ul.long {
+      display: flex;
+      min-height: 100%;
+      flex-direction: column;
+    }
+
+    @media only screen and (max-width : 980px) {
+      header, main, footer {
+        padding-left: 0;
+      }
+    }
+
+    div.footer {
+      font-size: 13px;
+      line-height: 150%;
+      padding: 10px;
+    }
+
+    div.footer br {
+      margin: 0em;
+    }
+
+
+    ul.bullet {
+      display: block;
+      list-style-type: square !important;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 20px;
+    }
+
+    ul.bullet li {
+      margin-bottom: 10px;
+    }
+    ul.bullet li::before {
+      content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+      color: black; /* Change the color */
+      font-weight: bold; /* If you want it to be bold */
+      display: inline-block; /* Needed to add space between the bullet and the text */
+      width: 1em; /* Also needed for space (tweak if needed) */
+      margin-left: -1em; /* Also needed for space (tweak if needed) */
+    }
+
+    .reducednavigation {
+      margin: 1px;
+      padding: 5px;
+    }
+
+
+    #nav-mobile li.entries {
+      margin: 1px;
+      margin-top: 0px;
+      padding: 2px;
+      border-bottom: 3px solid #80cbc444;
+    }
+
+    #nav-mobile li.entries_first {
+      //border-top: 2px solid #80cbc444;
+      margin-top: 5px;
+    }
+
+    .summary {
+      padding:10px;
+      border-radius: 20px;
+      margin-left: -20px;
+      margin-top: 4px;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <a href="#" data-target="nav-mobile" class="top-nav sidenav-trigger circle hide-on-large-only">
+        <i class="material-icons teal lighten-5 normal summary">menu</i>
+      </a>
+      <i class="material-icons teal lighten-5 normal" style="visibility:hidden;">menu</i>
+    </div>
+
+    <ul id="nav-mobile" class="sidenav sidenav-fixed long teal lighten-5">
+      <li class="entries entries_first"><a href="/" role="button" class="grey-text text-darken-4"><i class="material-icons left">home</i> Homepage</a></li>
+      <li class="entries"><a href="/resources.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">extension</i> Shared resources</a></li>
+      <li class="entries"><a href="/publications.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">border_color</i>Publications</a></li>
+      <li class="entries"><a href="/students.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">face</i>Students</a></li>
+      <li class="entries"><a href="/teaching.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">local_library</i>Teaching</a></li>
+      <li class="entries"><a href="/projects.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">build</i>Research projects</a></li>
+      <li class="entries"><a href="/seminars.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">directions_walk</i>Seminars & Invited talks</a></li>
+      <li class="entries"><a href="/news.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">event_note</i>News</a></li>
+      <li class="entries"><a href="/static/repo/cv.pdf" role="button" class="grey-text text-darken-4"><i class="material-icons left">school</i>Curriculum Vitae (CV)</a></li>
+      <li class="spacer"> </li>
+      <li>
+        <div class="center footer teal darken-4 white-text text-darken-4" style="border-top: 3px solid #80cbc444">
+          Fabrizio Sossan, 2020. <br/>
+          Latest update: 25/02/2023 08:13:56
+        </div>
+      </li>
+    </ul>
+  </header>
+
+  <script>
+    /*var p = location.pathname.split("/")[1];
+    var el = document.getElementsByTagName('nav')[0].querySelector('a[href=\\/'+p+']');
+    if (el != null) {
+      el.parentElement.setAttribute('class', 'active');
+    }*/
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
+    });
+  </script>
+
+
+  <main>
+    <div class="container">
+      <div class="col s12 m10 offset-m1">
+        <h4 class="header">News</h4>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <!-- Main content -->
+        
+
+<style>
+span.mycard-title {
+  font-weight: bold;
+  font-size: 14px;
+}
+</style>
+
+
+
+<a id='Jan2023Nna'> </a>
+<div class="card">
+  <div class="card-content">
+    <div class="row valign-wrapper">
+
+        <div class="col s12">
+          <span class="mycard-title">January 2023</span>
+          <p>
+            New journal paper entitled "Optimized Planning of Chargers for Electric Vehicles in Distribution Grids Including PV Self-consumption and Cooperative Vehicle Owners". Congratulations to the first author Biswarup! Paper available <a href='/static/repo/papers/j/2023_biswarup.pdf'>here</a>
+          </p>
+        </div>
+
+
+    </div>
+  </div>
+</div>
+
+<a id='Nov2022Ids'> </a>
+<div class="card">
+  <div class="card-content">
+    <div class="row valign-wrapper">
+
+        <div class="col s12">
+          <span class="mycard-title">November 2022</span>
+          <p>
+            I started a new professional appointment at the University of Applied Science of Western Switzerland (HES-SO Valais-Wallis), where I am associate professor of electrical power systems.
+          </p>
+        </div>
+
+
+    </div>
+  </div>
+</div>
+
+<a id='Mar2022Ies'> </a>
+<div class="card">
+  <div class="card-content">
+    <div class="row valign-wrapper">
+
+        <div class="col s12">
+          <span class="mycard-title">March 2022</span>
+          <p>
+            I gave a seminar at the Waterloo Institute of Sustainable Energy (WISE) of the University of Waterloo (Canada) on model predictive control to reduce the fatigue in medium- and high-head hydropower plants' penstocks and coupling with battery energy storage systems.
+          </p>
+        </div>
+
+
+    </div>
+  </div>
+</div>
+
+<a id='Mar2022Nn&gt;'> </a>
+<div class="card">
+  <div class="card-content">
+    <div class="row valign-wrapper">
+
+        <div class="col s12">
+          <span class="mycard-title">March 2022</span>
+          <p>
+            New journal paper: "Stress-informed Control of Medium- and High-head Hydropower Plants to Reduce Penstock Fatigue", available <a href='/static/repo/papers/j/2022_cassano_a.pdf'>here</a>.
+          </p>
+        </div>
+
+
+    </div>
+  </div>
+</div>
+
+<a id='Feb2022Trl'> </a>
+<div class="card">
+  <div class="card-content">
+    <div class="row valign-wrapper">
+
+        <div class="col s12">
+          <span class="mycard-title">February 2022</span>
+          <p>
+            Two papers accepted for the next Power Systems Computation Conference! They are about MPC for hybrid hydropower [<a href='https://arxiv.org/pdf/2111.05004.pdf'>link</a>], and model-less robust voltage control for distribution grids [<a href='https://arxiv.org/pdf/2201.04192.pdf'>link</a>]. Congrats Stefano and Rahul!
+          </p>
+        </div>
+
+
+    </div>
+  </div>
+</div>
+
+<a id='Jan2022Mrs'> </a>
+<div class="card">
+  <div class="card-content">
+    <div class="row valign-wrapper">
+
+        <div class="col s12">
+          <span class="mycard-title">January 2022</span>
+          <p>
+            My research project on integrated energy systems has been funded with € 300'000 by Region Sud - Provence Alpes Cote Cote d'Azur and MINES ParisTech under the framework 'AAP Recherche'. It will support the creation of a beyond-state-of-the-art microgrid laboratory with multiple energy carriers at MINES ParisTech in Sophia Antipolis.
+          </p>
+        </div>
+
+
+    </div>
+  </div>
+</div>
+
+<a id='Dec2021Ii2'> </a>
+<div class="card">
+  <div class="card-content">
+    <div class="row valign-wrapper">
+
+        <div class="col s12">
+          <span class="mycard-title">December 2021</span>
+          <p>
+            I will edit a special issue of IET together with Prof. Zechun Hu (Tsinghua University) on grid integration of electric vehicles. Call for papers will be out in early 2022.
+          </p>
+        </div>
+
+
+    </div>
+  </div>
+</div>
+
+<a id='Nov2021Bp&gt;'> </a>
+<div class="card">
+  <div class="card-content">
+    <div class="row valign-wrapper">
+
+        <div class="col s12">
+          <span class="mycard-title">November 2021</span>
+          <p>
+            Biswarup and I finalized a work on planning of charging infrastructure for electric vehicles and submitted it to IEEE Transactions on Smart Grid. The work is available <a href='/static/repo/papers/j/2021_mukherjee.pdf'>here</a>.
+          </p>
+        </div>
+
+
+    </div>
+  </div>
+</div>
+
+<a id='Nov2021It&gt;'> </a>
+<div class="card">
+  <div class="card-content">
+    <div class="row valign-wrapper">
+
+        <div class="col s12">
+          <span class="mycard-title">November 2021</span>
+          <p>
+            I presented at the wear-and-tear seminar of the H2020 project XFLEX-HYDRO our method for fatigue-informed control of medium- and high-head hydropower plant. Two journal papers covering all aspects of this subject (including using a battery system to reduce penstock stress), authored by Stefano and I, are currently out for revision. Preprints are preliminary available <a href='/static/repo/papers/j/2021_cassano_b.pdf'>here</a> and <a href='/prep/j/2021_cassano_a.pdf'>here</a>.
+          </p>
+        </div>
+
+
+    </div>
+  </div>
+</div>
+
+<a id='Oct2021Bp)'> </a>
+<div class="card">
+  <div class="card-content">
+    <div class="row valign-wrapper">
+
+        <div class="col s12">
+          <span class="mycard-title">October 2021</span>
+          <p>
+            Biswarup and Stefano presented two our papers at the conference ISGT 2021. One is on comparison of smart charging and vehicle-to-grid based on an extensible optimal power flow framework (more <a href='/prep/c/2021_mukherjee.pdf'>here</a>); the other proposes guide vane-to-head and guide-vane-to-torque linearized models of hydropower plants for efficient model-based control (more <a href='/prep/c/2021_cassano.pdf'>here</a>).
+          </p>
+        </div>
+
+
+    </div>
+  </div>
+</div>
+
+<a id='Sep2021Sae'> </a>
+<div class="card">
+  <div class="card-content">
+    <div class="row valign-wrapper">
+
+        <div class="col s12">
+          <span class="mycard-title">September 2021</span>
+          <p>
+            Stefano and I are developing an exciting demonstration of model predictive control (MPC) to reduce the mechanical stress in penstocks. We have set up and instrumented a 15-meter long, 2-inch diameter pipe to reproduce the "water hammer" effects happening in medium- and high-head hydropower plants when they provide regulating power to the power grid. By modeling hydraulic dynamics inside this pipe, we are capable of synthesizing a control law that avoids excessive forces on the pipe walls. In doing so, we increase the service life of this critical component while ensuring maximum flexibility for grid services — exciting stuff and probably an absolute worldwide prime. Stay tuned for more!
+          </p>
+        </div>
+
+
+    </div>
+  </div>
+</div>
+
+<a id='Apr2021Cgs'> </a>
+<div class="card">
+  <div class="card-content">
+    <div class="row valign-wrapper">
+
+        <div class="col s12">
+          <span class="mycard-title">April 2021</span>
+          <p>
+            CapEnergies awarded my research project on "An experimental infrastructure for research on integrated energy systems". CapEnergies is a competitiveness cluster whose direction and evaluation boards are served by major French energy industries. CapEnergies awards projects with demonstrated research excellence and potential for industrial applications and significant socio-economic impacts.
+          </p>
+        </div>
+
+
+    </div>
+  </div>
+</div>
+
+<a id='Sep2020Or&gt;'> </a>
+<div class="card">
+  <div class="card-content">
+    <div class="row valign-wrapper">
+
+        <div class="col s12">
+          <span class="mycard-title">September 2020</span>
+          <p>
+            Our paper was awarded with a top 5% paper mention at the 55th International Universities Power Engineering Conference (UPEC) for the work <a href='/prep/c/2020_cassano.pdf'>Reduction of Penstock Fatigue in a Medium-Head Hydropower Plant Providing Primary Frequency Control</a>.
+          </p>
+        </div>
+
+
+    </div>
+  </div>
+</div>
+
+<a id='Sep2020Its'> </a>
+<div class="card">
+  <div class="card-content">
+    <div class="row valign-wrapper">
+
+        <div class="col s12">
+          <span class="mycard-title">September 2020</span>
+          <p>
+            I presented the invited paper <a href='/prep/c/2020_sossan.pdf'>Impact of the Charging Demand of Electric Vehicles on Distribution Grids: a Comparison Between Autonomous and Non-Autonomous Driving</a> at the 15th International Conference on Ecological Vehicles and Renewable Energies.
+          </p>
+        </div>
+
+
+    </div>
+  </div>
+</div>
+
+<a id='Aug2020Ity'> </a>
+<div class="card">
+  <div class="card-content">
+    <div class="row valign-wrapper">
+
+        <div class="col s12">
+          <span class="mycard-title">August 2020</span>
+          <p>
+            I presented my research in the domain of grid-integration of autonomous mobility at the panel "Electric Vehicles as Flexible Demand-side Resources: Research Progress, Obstacles and Pilot Projects" of the 2020 General Meeting of the IEEE Power Engineering Society.
+          </p>
+        </div>
+
+
+    </div>
+  </div>
+</div>
+
+<a id='Jun2020Woe'> </a>
+<div class="card">
+  <div class="card-content">
+    <div class="row valign-wrapper">
+
+        <div class="col s12">
+          <span class="mycard-title">June 2020</span>
+          <p>
+            Website online.
+          </p>
+        </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+        <!-- End of main content -->
+      </div>
+    </div>
+
+
+
+    <!--footer class="page-footer teal lighten-4">
+      <div class="footer-copyright">
+        <div class="container">
+          <span>Fabrizio Sossan, 2020. </span> <span style="float:right">25/02/2023 08:13:56 </span>
+        </div>
+      </div>
+    </footer>-->
+
+  </main>
+
+</body>
+</html>

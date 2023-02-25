@@ -1,0 +1,1553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- generics -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/static/img/favicon_io/favicon-32.png" sizes="32x32">
+
+  <!-- Android -->
+  <link rel="shortcut icon" sizes="192x192" href=“/static/img/favicon_io/android-chrome-192.png">
+
+  <!-- iOS -->
+  <link rel="apple-touch-icon" href="/static/img/favicon_io/apple-touch-icon.png" sizes="180x180">
+
+  <!-- Windows 8 IE 10-->
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/static/img/favicon_io/favicon-144.png">
+
+  <!— Windows 8.1 + IE11 and above —>
+  <meta name="msapplication-config" content="/static/img/favicon_io/browserconfig.xml" />
+
+  <meta name = "viewport" content = "width=device-width, initial-scale = 1">
+  <title>Publications (all)  </title>
+  <meta name="Description" CONTENT="Fabrizio Sossan's personal webpage">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/static/materialize/css/materialize.min.css">
+  <script src="/static/materialize/js/materialize.min.js"></script>
+
+
+  <style>
+
+    /*.valign-wrapper {flex-wrap: wrap;}*/
+
+    a {
+      color: #009688;
+    }
+
+    h4, h5, h6 {
+      color: #004d40;
+    }
+
+    body,html {
+      color: #111111;
+      background-color: #DDDDDD11;
+      height: 100%;
+    }
+
+    .rps {
+      line-height: 125%;
+      margin-left: 5px;
+      text-align: center;
+    }
+
+    li.spacer {
+      flex: 1;
+    }
+
+    header, main, footer {
+      padding-left: 200px;
+    }
+
+    ul.long {
+      display: flex;
+      min-height: 100%;
+      flex-direction: column;
+    }
+
+    @media only screen and (max-width : 980px) {
+      header, main, footer {
+        padding-left: 0;
+      }
+    }
+
+    div.footer {
+      font-size: 13px;
+      line-height: 150%;
+      padding: 10px;
+    }
+
+    div.footer br {
+      margin: 0em;
+    }
+
+
+    ul.bullet {
+      display: block;
+      list-style-type: square !important;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 20px;
+    }
+
+    ul.bullet li {
+      margin-bottom: 10px;
+    }
+    ul.bullet li::before {
+      content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+      color: black; /* Change the color */
+      font-weight: bold; /* If you want it to be bold */
+      display: inline-block; /* Needed to add space between the bullet and the text */
+      width: 1em; /* Also needed for space (tweak if needed) */
+      margin-left: -1em; /* Also needed for space (tweak if needed) */
+    }
+
+    .reducednavigation {
+      margin: 1px;
+      padding: 5px;
+    }
+
+
+    #nav-mobile li.entries {
+      margin: 1px;
+      margin-top: 0px;
+      padding: 2px;
+      border-bottom: 3px solid #80cbc444;
+    }
+
+    #nav-mobile li.entries_first {
+      //border-top: 2px solid #80cbc444;
+      margin-top: 5px;
+    }
+
+    .summary {
+      padding:10px;
+      border-radius: 20px;
+      margin-left: -20px;
+      margin-top: 4px;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <a href="#" data-target="nav-mobile" class="top-nav sidenav-trigger circle hide-on-large-only">
+        <i class="material-icons teal lighten-5 normal summary">menu</i>
+      </a>
+      <i class="material-icons teal lighten-5 normal" style="visibility:hidden;">menu</i>
+    </div>
+
+    <ul id="nav-mobile" class="sidenav sidenav-fixed long teal lighten-5">
+      <li class="entries entries_first"><a href="/" role="button" class="grey-text text-darken-4"><i class="material-icons left">home</i> Homepage</a></li>
+      <li class="entries"><a href="/resources.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">extension</i> Shared resources</a></li>
+      <li class="entries"><a href="/publications.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">border_color</i>Publications</a></li>
+      <li class="entries"><a href="/students.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">face</i>Students</a></li>
+      <li class="entries"><a href="/teaching.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">local_library</i>Teaching</a></li>
+      <li class="entries"><a href="/projects.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">build</i>Research projects</a></li>
+      <li class="entries"><a href="/seminars.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">directions_walk</i>Seminars & Invited talks</a></li>
+      <li class="entries"><a href="/news.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">event_note</i>News</a></li>
+      <li class="entries"><a href="/static/repo/cv.pdf" role="button" class="grey-text text-darken-4"><i class="material-icons left">school</i>Curriculum Vitae (CV)</a></li>
+      <li class="spacer"> </li>
+      <li>
+        <div class="center footer teal darken-4 white-text text-darken-4" style="border-top: 3px solid #80cbc444">
+          Fabrizio Sossan, 2020. <br/>
+          Latest update: 25/02/2023 08:13:56
+        </div>
+      </li>
+    </ul>
+  </header>
+
+  <script>
+    /*var p = location.pathname.split("/")[1];
+    var el = document.getElementsByTagName('nav')[0].querySelector('a[href=\\/'+p+']');
+    if (el != null) {
+      el.parentElement.setAttribute('class', 'active');
+    }*/
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
+    });
+  </script>
+
+
+  <main>
+    <div class="container">
+      <div class="col s12 m10 offset-m1">
+        <h4 class="header">Publications (all) </h4>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <!-- Main content -->
+        
+
+
+<style>
+  span.mycard-title {
+    font-weight: bold;
+    font-size: 16px;
+  }
+</style>
+
+<a class='dropdown-trigger btn' href='#' data-target='pub_years'>Year: all </a>
+<ul id="pub_years" class='dropdown-content'>
+  <li> <a href="/publications.html"> All </a></li>
+  
+  
+  <!-- Replace with url_for --->
+  <!--<li> <a href="/publications_2023.html"> 2023 </a></li>-->
+  
+  <li> <a href="/publications_2023.html"> 2023 </a></li>
+  
+  
+  
+  <!-- Replace with url_for --->
+  <!--<li> <a href="/publications_2022.html"> 2022 </a></li>-->
+  
+  <li> <a href="/publications_2022.html"> 2022 </a></li>
+  
+  
+  
+  <!-- Replace with url_for --->
+  <!--<li> <a href="/publications_2021.html"> 2021 </a></li>-->
+  
+  <li> <a href="/publications_2021.html"> 2021 </a></li>
+  
+  
+  
+  <!-- Replace with url_for --->
+  <!--<li> <a href="/publications_2020.html"> 2020 </a></li>-->
+  
+  <li> <a href="/publications_2020.html"> 2020 </a></li>
+  
+  
+  
+  <!-- Replace with url_for --->
+  <!--<li> <a href="/publications_2019.html"> 2019 </a></li>-->
+  
+  <li> <a href="/publications_2019.html"> 2019 </a></li>
+  
+  
+  
+  <!-- Replace with url_for --->
+  <!--<li> <a href="/publications_2018.html"> 2018 </a></li>-->
+  
+  <li> <a href="/publications_2018.html"> 2018 </a></li>
+  
+  
+  
+  <!-- Replace with url_for --->
+  <!--<li> <a href="/publications_2017.html"> 2017 </a></li>-->
+  
+  <li> <a href="/publications_2017.html"> 2017 </a></li>
+  
+  
+  
+  <!-- Replace with url_for --->
+  <!--<li> <a href="/publications_2016.html"> 2016 </a></li>-->
+  
+  <li> <a href="/publications_2016.html"> 2016 </a></li>
+  
+  
+  
+  <!-- Replace with url_for --->
+  <!--<li> <a href="/publications_2015.html"> 2015 </a></li>-->
+  
+  <li> <a href="/publications_2015.html"> 2015 </a></li>
+  
+  
+  
+  <!-- Replace with url_for --->
+  <!--<li> <a href="/publications_2014.html"> 2014 </a></li>-->
+  
+  <li> <a href="/publications_2014.html"> 2014 </a></li>
+  
+  
+  
+  <!-- Replace with url_for --->
+  <!--<li> <a href="/publications_2013.html"> 2013 </a></li>-->
+  
+  <li> <a href="/publications_2013.html"> 2013 </a></li>
+  
+  
+  
+  
+  
+  <!--<script type="text/javascript">
+    var curyear = new Date().getFullYear();
+    for (var i=curyear; i>=2013; i--) {
+      var li = document.createElement("li");
+      var a = document.createElement("a");
+      a.innerHTML = i;
+      //a.href = "/publications.html/" + i;
+      
+      a.href = "/publications_2022.html";
+      
+      li.appendChild(a);
+      document.getElementById("pub_years").appendChild(li);
+    }
+  </script>-->
+</ul>
+
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.dropdown-trigger');
+    var instances = M.Dropdown.init(elems);
+  });
+</script>
+
+
+
+
+
+<div class="row">
+  <div class="col s12 m9">
+    <div id="pubs_container">
+      
+      <div id="Journal publications" class="section scrollspy">
+        <h5 class="teal-text text-darken-2"> Journal publications </h5>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Optimized Planning of Chargers for Electric Vehicles in Distribution Grids Including PV Self-consumption and Cooperative Vehicle Owners</span>
+            <div class="pubauthor"> B. Mukherjee, F. Sossan </div>
+            <span class="pubcite"> IET Energy Conversion and Economics. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/j/2023_biswarup.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Model Predictive Control for a Medium-head Hydropower Plant Hybridized with Battery Energy Storage to Reduce Penstock Fatigue</span>
+            <div class="pubauthor"> S. Cassano, F. Sossan </div>
+            <span class="pubcite"> Electric Power Systems Research/Power Systems Computation Conference (Accepted). </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/j/2021_cassano_b.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Model-less Robust Voltage Control in Active Distribution Networks using Sensitivity Coefficients Estimated from Measurements</span>
+            <div class="pubauthor"> R. Gupta, F. Sossan, M. Paolone </div>
+            <span class="pubcite"> Electric Power Systems Research/Power Systems Computation Conference (Accepted). </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Stress-informed Control of Medium- and High-head Hydropower Plants to Reduce Penstock Fatigue</span>
+            <div class="pubauthor"> S. Cassano, F. Sossan </div>
+            <span class="pubcite"> Sustainable Energy, Grids and Networks, 31, 100688. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/j/2022_cassano_a.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://www.sciencedirect.com/science/article/pii/S2352467722000443">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Countrywide PV hosting capacity and energy storage requirements for distribution networks: The case of Switzerland</span>
+            <div class="pubauthor"> R. Gupta, F. Sossan, M. Paolone </div>
+            <span class="pubcite"> Applied Energy, Volume 281, 116010. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/j/2021_gupta.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://www.sciencedirect.com/science/article/pii/S0306261920314537">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Siting and sizing of energy storage systems: Towards a unified approach for transmission and distribution system operators for reserve provision and grid support</span>
+            <div class="pubauthor"> S. Massucco, M. Paolone, P. Pongiglione, F. Silvestro, F. Sossan </div>
+            <span class="pubcite"> Electric Power Systems Research, 190. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/j/2021_massucco.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://www.sciencedirect.com/science/article/pii/S0378779620304636">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Optimal Provision of Concurrent Primary Frequency and Local Voltage Control from a BESS Considering Variable Capability Curves: Modelling and Experimental Assessment</span>
+            <div class="pubauthor"> A. Zecchino, Z. Yuan, F. Sossan, R. Cherkaoui, M. Paolone </div>
+            <span class="pubcite"> Electric Power Systems Research, 190. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/j/2021_zecchino.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://www.sciencedirect.com/science/article/pii/S0378779620304466">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Performance assessment of grid-forming and grid-following converter-interfaced battery energy storage systems on frequency regulation in low-inertia power grids</span>
+            <div class="pubauthor"> Y. Zuo, Z. Yuan, F. Sossan, A. Zecchino, R. Cherkaoui, M. Paolone </div>
+            <span class="pubcite"> Sustainable Energy, Grids and Networks. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/j/2021_yihui.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://www.sciencedirect.com/science/article/pii/S2352467721000679?via%3Dihub">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Compound Admittance Matrix Estimation of Three-Phase Untransposed Power Distribution Grids Using Synchrophasor Measurements</span>
+            <div class="pubauthor"> R. Gupta, F. Sossan, J. Y. Le Boudec, M. Paolone </div>
+            <span class="pubcite"> IEEE Transactions on Instrumentation and Measurement, 70. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/j/2021_gupta_b.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/abstract/document/9464332/">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Optimal Planning of Single-Port and Multi-Port Charging Stations for Electric Vehicles in Medium Voltage Distribution Networks</span>
+            <div class="pubauthor"> B. Mukherjee, F. Sossan </div>
+            <span class="pubcite"> IEEE Transactions on Smart Grid (Submitted) </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/j/2021_mukherjee.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Grid-aware Distributed Model Predictive Control of Heterogeneous Resources in a Distribution Network: Theory and Experimental Validation</span>
+            <div class="pubauthor"> R. Gupta, F. Sossan, M. Paolone </div>
+            <span class="pubcite"> IEEE Transactions on Energy Conversion. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/j/2020_gupta.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/9163265">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Hierarchical demand forecasting benchmark for the distribution grid</span>
+            <div class="pubauthor"> L. Nespoli, V. Medici, L. Kristijan, F. Sossan </div>
+            <span class="pubcite"> Electric Power Systems Research, 189, 106755. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/j/2020_nespoli.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://www.sciencedirect.com/science/article/pii/S0378779620305587">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">A receding horizon control approach for re-dispatching stochastic heterogeneous resources accounting for grid and battery losses</span>
+            <div class="pubauthor"> E. Stai, F. Sossan, E. Namor, J.Y. Le Boudec, M. Paolone </div>
+            <span class="pubcite"> Electric Power Systems Research, 185. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://www.sciencedirect.com/science/article/pii/S0378779620301462">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Effect of voltage source converters with electrochemical storage systems on dynamics of reduced-inertia bulk power grids</span>
+            <div class="pubauthor"> Y. Zuo, F. Sossan, M. Paolone </div>
+            <span class="pubcite"> Electric Power Systems Research, 189. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/j/2020_zuo.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://www.sciencedirect.com/science/article/pii/S0378779620305691">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Characterizing the reserve provision capability area of active distribution networks: a linear robust optimization method</span>
+            <div class="pubauthor"> M. Kalantar-Neyestanaki, F. Sossan, M. Bozorg, R. Cherkaoui </div>
+            <span class="pubcite"> IEEE Transactions on Smart Grid, 11(3): 2464-2475. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/8917723">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Solar irradiance estimations for modeling the variability of photovoltaic generation and assessing violations of grid constraints: A comparison between satellite and pyranometers measurements with load flow simulations</span>
+            <div class="pubauthor"> F. Sossan, E. Scolari, R. Gupta, M. Paolone </div>
+            <span class="pubcite"> Journal of Renewable and Sustainable Energy of American Institute of Physics, 11(5). </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/j/2019_sossan.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://aip.scitation.org/doi/10.1063/1.5109076">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Influencing the bulk power system reserve by dispatching power distribution networks using local energy storage</span>
+            <div class="pubauthor"> M. Bozorg, F. Sossan, J.Y. Le Boudec, M. Paolone </div>
+            <span class="pubcite"> Electric Power Systems Research, 163:270 – 279. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/j/2018_bozorg.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://www.sciencedirect.com/science/article/pii/S0378779618301901">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Enhancing the dispatchability of distribution networks through utility-scale batteries and flexible demand</span>
+            <div class="pubauthor"> L. Fabietti, T. T. Gorecki, E. Namor, F. Sossan, M. Paolone, C. N. Jones </div>
+            <span class="pubcite"> Energy and Buildings, 172:125 – 138. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://www.sciencedirect.com/science/article/pii/S0378778817325197">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Concurrent voltage control and dispatch of active distribution networks by means of smart transformer and storage</span>
+            <div class="pubauthor"> X. Gao, F. Sossan, K. Christakou, M. Paolone, M. Liserre </div>
+            <span class="pubcite"> IEEE Transactions on Industrial Electronics, 65(8):6657–6666. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/j/2018_gao.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/8106710">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Experimental validation of a steady state model synthesis method for a three-phase unbalanced active distribution network feeder</span>
+            <div class="pubauthor"> F. Mahmood, L. Vanfretti, M. Pignati, F. Sossan, M. Paolone </div>
+            <span class="pubcite"> IEEE Access, 6:4042–4053. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8254341">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Control of battery storage systems for the simultaneous provision of multiple services</span>
+            <div class="pubauthor"> E. Namor, F. Sossan, R. Cherkaoui, M. Paolone </div>
+            <span class="pubcite"> IEEE Transactions on Smart Grid, 10(3):2799–2808. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/j/2018_namor.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/8304683">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">A comprehensive assessment of the short-term uncertainty of grid-connected pv systems</span>
+            <div class="pubauthor"> E. Scolari, L. Reyes, F. Sossan, M. Paolone </div>
+            <span class="pubcite"> IEEE Transactions on Sustainable Energy, 9(3):1458–1467. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/j/2018_scolari.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/8247241">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Local estimation of the global horizontal irradiance using an all-sky camera</span>
+            <div class="pubauthor"> E. Scolari, F. Sossan, M. Haure-Touze, M. Paolone </div>
+            <span class="pubcite"> Solar Energy, 173:1225 – 1235. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://www.sciencedirect.com/science/article/abs/pii/S0038092X18308119">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Unsupervised disaggregation of photovoltaic production from composite power flow measurements of heterogeneous prosumers</span>
+            <div class="pubauthor"> F. Sossan, L. Nespoli, V. Medici, M. Paolone </div>
+            <span class="pubcite"> IEEE Transactions on Industrial Informatics, 14(9):3904–3913, 2018. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/j/2018_sossan.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/8253874">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Dispatching stochastic heterogeneous resources accounting for grid and battery losses</span>
+            <div class="pubauthor"> E. Stai, L. Reyes-Chamorro, F. Sossan, J.Y. Le Boudec, M. Paolone </div>
+            <span class="pubcite"> IEEE Transactions on Smart Grid, 9(6):6522–6539. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/j/2018_stai.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/7948761">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Photovoltaic-model-based solar irradiance estimators: Performance comparison and application to maximum power forecasting</span>
+            <div class="pubauthor"> E. Scolari, F. Sossan, M. Paolone </div>
+            <span class="pubcite"> IEEE Transactions on Sustainable Energy, 9(1):35–44. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/j/2017_scolari.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/7946197">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Equivalent electricity storage capacity of domestic thermostatically controlled loads</span>
+            <div class="pubauthor"> F. Sossan </div>
+            <span class="pubcite"> Energy, 122. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/j/2017_sossan.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://www.sciencedirect.com/science/article/abs/pii/S0360544216319016">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Irradiance prediction intervals for PV stochastic generation in microgrid applications</span>
+            <div class="pubauthor"> E. Scolari, F. Sossan, M. Paolone </div>
+            <span class="pubcite"> Solar Energy, 139. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/j/2016_scolari.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://www.sciencedirect.com/science/article/pii/S0038092X16304364">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Grey-box modelling of a household refrigeration unit using time series data in application to demand side management</span>
+            <div class="pubauthor"> F. Sossan, V. Lakshmanan, G. T. Costanzo, M. Marinelli, P. J. Douglass, H. Bindner </div>
+            <span class="pubcite"> Sustainable Energy, Grids and Networks, 5. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/j/2016_sossan.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://www.sciencedirect.com/science/article/pii/S2352467715000533">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Achieving the dispatchability of distribution feeders through prosumers data driven forecasting and model predictive control of electrochemical storage</span>
+            <div class="pubauthor"> F. Sossan, E. Namor, R. Cherkaoui, M. Paolone </div>
+            <span class="pubcite"> IEEE Transactions on Sustainable Energy, 7(4):1762–1777. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/j/2016_sossan_b.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/7542590">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">A model predictive control strategy for the space heating of a smart building including cogeneration of a fuel cell-electrolyzer system</span>
+            <div class="pubauthor"> F. Sossan, H. Bindner, H. Madsen, D. Torregrossa, L. R. Chamorro, M. Paolone </div>
+            <span class="pubcite"> International Journal of Electrical Power &amp; Energy Systems, 62:879 – 889. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/j/2014_sossan.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://www.sciencedirect.com/science/article/pii/S0142061514003111">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Testing of a predictive control strategy for balancing renewable sources in a microgrid</span>
+            <div class="pubauthor"> M. Marinelli, F. Sossan, G. T. Costanzo, H. W. Bindner </div>
+            <span class="pubcite"> IEEE Transactions on Sustainable Energy, 5(4):1426–1433. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/6718205">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+      </div>
+      
+      <div id="Conference publications" class="section scrollspy">
+        <h5 class="teal-text text-darken-2"> Conference publications </h5>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Smart Charging, Vehicle-to-Grid, and Reactive Power Support from Electric Vehicles in Distribution Grids: A Performance Comparison</span>
+            <div class="pubauthor"> B. Mukherjee, G. Kariniotakis, F. Sossan </div>
+            <span class="pubcite"> In 2021 IEEE PES Innovative Smart Grid Technologies Conference Europe (ISGT-Europe). IEEE. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/c/2021_mukherjee.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Performance Assessment of Linear Models of Hydropower Plants</span>
+            <div class="pubauthor"> S. Cassano, C. Landry, C. Nicolet, F. Sossan </div>
+            <span class="pubcite"> In 2021 IEEE PES Innovative Smart Grid Technologies Conference Europe (ISGT-Europe). IEEE. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/c/2021_cassano.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Performance Comparison of Alternating Direction Optimization Methods for Linear-OPF based Real-time Predictive Control</span>
+            <div class="pubauthor"> R. Gupta, V. Sovljanski, F. Sossan, M. Paolone </div>
+            <span class="pubcite"> In 2021 IEEE Madrid PowerTech. IEEE. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/c/2021_gupta.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/abstract/document/9494812/">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Reduction of Penstock Fatigue in a Medium-Head Hydropower Plant Providing Primary Frequency Control</span>
+            <div class="pubauthor"> S. Cassano, C. Nicolet, F. Sossan </div>
+            <span class="pubcite"> In 2020 55th International Universities Power Engineering Conference (UPEC). IEEE. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/c/2020_cassano.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/9209857">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Impact of the Charging Demand of Electric Vehicles on Distribution Grids: a Comparison Between Autonomous and Non-Autonomous Driving</span>
+            <div class="pubauthor"> F. Sossan, B. Mukherjee, Z. Hu </div>
+            <span class="pubcite"> In 15th International Conference on Ecological Vehicles and Renewable Energies (EVER). IEEE. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/c/2020_sossan.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/9243122">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Performance assessment of linearized OPF-based distributed real-time predictive control</span>
+            <div class="pubauthor"> R. Gupta, F. Sossan, M. Paolone </div>
+            <span class="pubcite"> In 2019 IEEE Manchester PowerTech. IEEE. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/c/2019_gupta.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/8810532">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Allocation of active power reserve from active distribution networks using a cost-benefit approach: Application to Swissgrid network</span>
+            <div class="pubauthor"> M. Kalantar-Neyestanaki, M. Bozorg, F. Sossan, R. Cherkaoui </div>
+            <span class="pubcite"> In 2019 IEEE Manchester PowerTech. IEEE. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/8811001">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">An ADMM-based coordination and control strategy for PV and storage to dispatch stochastic prosumers: Theory and experimental validation</span>
+            <div class="pubauthor"> R. Gupta, F. Sossan, E. Scolari, E. Namor, L. Fabietti, C. N. Jones, M. Paolone </div>
+            <span class="pubcite"> In 2018 Power Systems Computation Conference (PSCC). </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/c/2018_gupta.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/8450879">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Allocation of frequency control reserve from aggregated resources of active distribution systems</span>
+            <div class="pubauthor"> M. Kalantar-Neyestanaki, M. Bozorg, F. Sossan, R. Cherkaoui </div>
+            <span class="pubcite"> In 2018 Power Systems Computation Conference (PSCC). </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/8442762">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Experimental assessment of the prediction performance of dynamic equivalent circuit models of grid-connected battery energy storage systems</span>
+            <div class="pubauthor"> E. Namor, F. Sossan, E. Scolari, R. Cherkaoui, M. Paolone </div>
+            <span class="pubcite"> In 2018 IEEE International Conference on Innovative Smart Grid Technologies (ISGT). IEEE. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/c/2018_namor.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/8571787">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Quantification of primary frequency control provision from battery energy storage systems connected to active distribution networks</span>
+            <div class="pubauthor"> G.-P. Schiapparelli, S. Massucco, E. Namor, F. Sossan, R. Cherkaoui, M. Paolone </div>
+            <span class="pubcite"> 2018 Power Systems Computation Conference (PSCC). </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/8442554">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">An econometric model of the regulating power price for interconnected power systems: the case of the nord pool market</span>
+            <div class="pubauthor"> A. Valenciano López, M. Bozorg, F. Sossan, M. Paolone </div>
+            <span class="pubcite"> In 15th International Conference on the European Energy Market (EEM). IEEE. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/c/2018_valenciano.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/8469874">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Dispatch and primary frequency control with electrochemical storage: a system-wise verification</span>
+            <div class="pubauthor"> Y. Zuo, F. Sossan, M. Bozorg, M. Paolone </div>
+            <span class="pubcite"> In 2018 IEEE International Conference on Innovative Smart Grid Technologies (ISGT). IEEE. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/c/2018_zuo.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/8571832">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Dispatching active distribution networks through electrochemical storage systems and demand side management</span>
+            <div class="pubauthor"> L. Fabietti, T. T. Gorecki, E. Namor, F. Sossan, M. Paolone, C. N. Jones </div>
+            <span class="pubcite"> In 2017 1st IEEE Conference on Control Technology and Applications. IEEE. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/8062629">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Cloud Motion Identification Algorithms Based on All-Sky Images to Support Solar Irradiance Forecast</span>
+            <div class="pubauthor"> L. Magnone, F. Sossan, E. Scolari, M. Paolone </div>
+            <span class="pubcite"> In 2017 IEEE 44th Photovoltaic Specialist Conference (PVSC), IEEE. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/c/2017_magnone.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/8366102">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Battery storage system optimal exploitation through physics-based model predictive control</span>
+            <div class="pubauthor"> E. Namor, F. Sossan, D. Torregrossa, R. Cherkaoui, M. Paolone </div>
+            <span class="pubcite"> 2017 IEEE Manchester PowerTech. IEEE. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/7981145">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">A model-based filtering strategy to reconstruct the maximum power generation of curtailed photovoltaic installations: application to forecasting</span>
+            <div class="pubauthor"> E. Scolari, F. Sossan, M. Paolone </div>
+            <span class="pubcite"> In 2017 IEEE Manchester PowerTech. IEEE. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/c/2017_scolari.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/7980794">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Enhancing the provision of ancillary services from storage systems using smart transformer and smart meters</span>
+            <div class="pubauthor"> F. Sossan, K. Christakou, M. Paolone, X. Gao, M. Liserre </div>
+            <span class="pubcite"> In 2017 IEEE 26th International Symposium on Industrial Electronics (ISIE). IEEE. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/c/2017_sossan.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/8001506">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Assessment of battery ageing and implementation of an ageing aware control strategy for a load leveling application of a lithium titanate battery energy storage system</span>
+            <div class="pubauthor"> E. Namor, D. Torregrossa, F. Sossan, R. Cherkaoui, M. Paolone </div>
+            <span class="pubcite"> In 2016 IEEE 17th Workshop on Control and Modeling for Power Electronics (COMPEL). IEEE. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/c/2016_namor_compel.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/7556779">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Load leveling and dispatchability of a medium voltage active feeder through battery energy storage systems: Formulation of the control problem and experimental validation</span>
+            <div class="pubauthor"> E. Namor, F. Sossan, R. Cherkaoui, M. Paolone </div>
+            <span class="pubcite"> 2016 IEEE International Conference on Innovative Smart Grid Technologies (ISGT). IEEE. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/c/2016_namor_isgt.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/7856260">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Integration and operation of utility-scale battery energy storage systems: the EPFL’s experience</span>
+            <div class="pubauthor"> F. Sossan, M. Paolone </div>
+            <span class="pubcite"> In 2016 IFAC Workshop on Control of Transmission and Distribution Smart Grids (CTDSG). </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/c/2016_sossan_ifac.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://www.sciencedirect.com/science/article/pii/S2405896316324004">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Large scale deployment of PV units in existing distribution networks: Optimization of the installation layout</span>
+            <div class="pubauthor"> F. Sossan, J. Darulova, M. Paolone, A. Kahl, S. J. Bartlett, M. Lehning </div>
+            <span class="pubcite"> In 2016 Power Systems Computation Conference (PSCC). </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/c/2016_sossan_pscc.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://infoscience.epfl.ch/record/219177/files/927.pdf">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Control of a battery energy storage system accounting for the charge redistribution effect to dispatch the operation of a medium voltage feeder</span>
+            <div class="pubauthor"> F. Sossan, D. Torregrossa, E. Namor, R. Cherkaoui, M. Paolone </div>
+            <span class="pubcite"> In 2015 IEEE Eindhoven PowerTech. IEEE. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/c/2015_sossan.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/7232770">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Load kick-back effects due to activation of demand</span>
+            <div class="pubauthor"> X. Han, F. Sossan, H. Bindner, S. You, H. Hansen, P. Cajar </div>
+            <span class="pubcite"> In 2014 IEEE International Conference on Innovative Smart Grid Technologies (ISGT). IEEE. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/7028976">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Dynamic behaviour of a population of controlled-by-price demand side resources</span>
+            <div class="pubauthor"> F. Sossan, X. Han, H. Bindner </div>
+            <span class="pubcite"> In 2014 IEEE PES General Meeting. IEEE. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/c/2014_sossan.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/abstract/document/6939320">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">A coordination scheme for distributed model predictive control: Integration of flexible DERs</span>
+            <div class="pubauthor"> G. T. Costanzo, O. Gehrke, D. E. M. Bondy, F. Sossan, H. Bindner, J. Parvizi, H. Madsen </div>
+            <span class="pubcite"> In 2013 IEEE International Conference on Innovative Smart Grid Technologies (ISGT). IEEE. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/c/2013_costanzo_isgt.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/6695474">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Grey-box modeling for system identification of household refrigerators: A step toward smart appliances</span>
+            <div class="pubauthor"> G. T. Costanzo, F. Sossan, M. Marinelli, P. Bacher, H. Madsen </div>
+            <span class="pubcite"> In 2013 International Youth Conference on Energy (IYCE). IEEE. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/c/2013_costanzo_iyce.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/6604197">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Design and evaluation of autonomous hybrid frequency-voltage sensitive load controller</span>
+            <div class="pubauthor"> P. J. Douglass, R. Garcia-Valle, F. Sossan, J. Ostergaard, P. Nyeng </div>
+            <span class="pubcite"> In 2013 IEEE International Conference on Innovative Smart Grid Technologies (ISGT). IEEE. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/6695337">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Domestic refrigerators temperature prediction strategy for the evaluation of the expected power consumption</span>
+            <div class="pubauthor"> V. Lakshmanan, M. Marinelli, A. M. Kosek, F. Sossan, P. B. Nørgård </div>
+            <span class="pubcite"> In 2013 IEEE International Conference on Innovative Smart Grid Technologies (ISGT). IEEE. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/6695411">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Day-ahead scheduling of a photovoltaic plant by the energy management of a storage system</span>
+            <div class="pubauthor"> M. Marinelli, F. Sossan, F. R. Isleifsson, G. T. Costanzo, H. Bindner </div>
+            <span class="pubcite"> In 2013 48th International Universities&#34; Power Engineering Conference (UPEC). IEEE. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/6715023">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Scheduling of domestic water heater power demand for maximizing PV self-consumption using model predictive control</span>
+            <div class="pubauthor"> F. Sossan, A. M. Kosek, S. Martinenas, M. Marinelli, H. W. Bindner </div>
+            <span class="pubcite"> In 2013 IEEE International Conference on Innovative Smart Grid Technologies (ISGT). IEEE. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/c/2013_sossan_isgt.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/6695317">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Indirect control of DSRs for regulating power provision and solving local congestions</span>
+            <div class="pubauthor"> F. Sossan, M. Marinelli, G. T. Costanzo, H. Bindner </div>
+            <span class="pubcite"> In International Youth Conference on Energy (IYCE). In 2013 IEEE International Youth Conference on Energy (IYCE), Best poster award. IEEE. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/c/2013_sossan_iyce.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/abstract/document/6604159">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">An auto tuning substation peak shaving controller for congestion management using flexible demand</span>
+            <div class="pubauthor"> F. Sossan, M. Marinelli </div>
+            <span class="pubcite"> 2013 48th International Universities&#34; Power Engineering Conference (UPEC). IEEE. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/c/2013_sossan_upec.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/6714963">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Evaluation of the performance of indirect control of many DSRs using hardware-in-the-loop simulations</span>
+            <div class="pubauthor"> F. Sossan, H. Bindner </div>
+            <span class="pubcite"> In 2012 51st Conference on Decision and Control (CDC). IEEE. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/c/2012_sossan_cdc.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/6425881">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">A comparison of algorithms for controlling DSRs in a control by price context using hardware-in-the-loop simulation</span>
+            <div class="pubauthor"> F. Sossan, H. Bindner </div>
+            <span class="pubcite"> In 2012 IEEE Power and Energy Society General Meeting. IEEE. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/c/2012_sossan_pesgm.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/6345022">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Transient support to frequency control from wind turbine with synchronous generator and full converter</span>
+            <div class="pubauthor"> S. Grillo, M. Marinelli, F. Silvestro, F. Sossan, O. Anaya-Lara, G. Burt </div>
+            <span class="pubcite"> In 2010 46th International Universities&#34; Power Engineering Conference (UPEC). IEEE. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/c/2010_sossan.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/5654378">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- scrollspy -->
+  <div class="col hide-on-small-only m3">
+    <div class="pushpin" data-target="pubs_container">
+      <ul class="section table-of-contents" >
+        
+        <li><a href="#Journal publications">Journal (32)</a></li>
+        
+        <li><a href="#Conference publications">Conference (36)</a></li>
+        
+        <!--<li><a href="#structure">Conference (0)</a></li>-->
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.scrollspy');
+    var instances = M.ScrollSpy.init(elems);
+
+    elems = document.querySelectorAll('.pushpin');
+    instances = M.Pushpin.init(elems);
+
+  });
+</script>
+
+
+
+
+
+        <!-- End of main content -->
+      </div>
+    </div>
+
+
+
+    <!--footer class="page-footer teal lighten-4">
+      <div class="footer-copyright">
+        <div class="container">
+          <span>Fabrizio Sossan, 2020. </span> <span style="float:right">25/02/2023 08:13:56 </span>
+        </div>
+      </div>
+    </footer>-->
+
+  </main>
+
+</body>
+</html>

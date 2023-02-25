@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- generics -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/static/img/favicon_io/favicon-32.png" sizes="32x32">
+
+  <!-- Android -->
+  <link rel="shortcut icon" sizes="192x192" href=“/static/img/favicon_io/android-chrome-192.png">
+
+  <!-- iOS -->
+  <link rel="apple-touch-icon" href="/static/img/favicon_io/apple-touch-icon.png" sizes="180x180">
+
+  <!-- Windows 8 IE 10-->
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/static/img/favicon_io/favicon-144.png">
+
+  <!— Windows 8.1 + IE11 and above —>
+  <meta name="msapplication-config" content="/static/img/favicon_io/browserconfig.xml" />
+
+  <meta name = "viewport" content = "width=device-width, initial-scale = 1">
+  <title>Publications (2018)  </title>
+  <meta name="Description" CONTENT="Fabrizio Sossan's personal webpage">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/static/materialize/css/materialize.min.css">
+  <script src="/static/materialize/js/materialize.min.js"></script>
+
+
+  <style>
+
+    /*.valign-wrapper {flex-wrap: wrap;}*/
+
+    a {
+      color: #009688;
+    }
+
+    h4, h5, h6 {
+      color: #004d40;
+    }
+
+    body,html {
+      color: #111111;
+      background-color: #DDDDDD11;
+      height: 100%;
+    }
+
+    .rps {
+      line-height: 125%;
+      margin-left: 5px;
+      text-align: center;
+    }
+
+    li.spacer {
+      flex: 1;
+    }
+
+    header, main, footer {
+      padding-left: 200px;
+    }
+
+    ul.long {
+      display: flex;
+      min-height: 100%;
+      flex-direction: column;
+    }
+
+    @media only screen and (max-width : 980px) {
+      header, main, footer {
+        padding-left: 0;
+      }
+    }
+
+    div.footer {
+      font-size: 13px;
+      line-height: 150%;
+      padding: 10px;
+    }
+
+    div.footer br {
+      margin: 0em;
+    }
+
+
+    ul.bullet {
+      display: block;
+      list-style-type: square !important;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 20px;
+    }
+
+    ul.bullet li {
+      margin-bottom: 10px;
+    }
+    ul.bullet li::before {
+      content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+      color: black; /* Change the color */
+      font-weight: bold; /* If you want it to be bold */
+      display: inline-block; /* Needed to add space between the bullet and the text */
+      width: 1em; /* Also needed for space (tweak if needed) */
+      margin-left: -1em; /* Also needed for space (tweak if needed) */
+    }
+
+    .reducednavigation {
+      margin: 1px;
+      padding: 5px;
+    }
+
+
+    #nav-mobile li.entries {
+      margin: 1px;
+      margin-top: 0px;
+      padding: 2px;
+      border-bottom: 3px solid #80cbc444;
+    }
+
+    #nav-mobile li.entries_first {
+      //border-top: 2px solid #80cbc444;
+      margin-top: 5px;
+    }
+
+    .summary {
+      padding:10px;
+      border-radius: 20px;
+      margin-left: -20px;
+      margin-top: 4px;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <a href="#" data-target="nav-mobile" class="top-nav sidenav-trigger circle hide-on-large-only">
+        <i class="material-icons teal lighten-5 normal summary">menu</i>
+      </a>
+      <i class="material-icons teal lighten-5 normal" style="visibility:hidden;">menu</i>
+    </div>
+
+    <ul id="nav-mobile" class="sidenav sidenav-fixed long teal lighten-5">
+      <li class="entries entries_first"><a href="/" role="button" class="grey-text text-darken-4"><i class="material-icons left">home</i> Homepage</a></li>
+      <li class="entries"><a href="/resources.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">extension</i> Shared resources</a></li>
+      <li class="entries"><a href="/publications.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">border_color</i>Publications</a></li>
+      <li class="entries"><a href="/students.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">face</i>Students</a></li>
+      <li class="entries"><a href="/teaching.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">local_library</i>Teaching</a></li>
+      <li class="entries"><a href="/projects.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">build</i>Research projects</a></li>
+      <li class="entries"><a href="/seminars.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">directions_walk</i>Seminars & Invited talks</a></li>
+      <li class="entries"><a href="/news.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">event_note</i>News</a></li>
+      <li class="entries"><a href="/static/repo/cv.pdf" role="button" class="grey-text text-darken-4"><i class="material-icons left">school</i>Curriculum Vitae (CV)</a></li>
+      <li class="spacer"> </li>
+      <li>
+        <div class="center footer teal darken-4 white-text text-darken-4" style="border-top: 3px solid #80cbc444">
+          Fabrizio Sossan, 2020. <br/>
+          Latest update: 25/02/2023 08:13:57
+        </div>
+      </li>
+    </ul>
+  </header>
+
+  <script>
+    /*var p = location.pathname.split("/")[1];
+    var el = document.getElementsByTagName('nav')[0].querySelector('a[href=\\/'+p+']');
+    if (el != null) {
+      el.parentElement.setAttribute('class', 'active');
+    }*/
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
+    });
+  </script>
+
+
+  <main>
+    <div class="container">
+      <div class="col s12 m10 offset-m1">
+        <h4 class="header">Publications (2018) </h4>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <!-- Main content -->
+        
+
+
+<style>
+  span.mycard-title {
+    font-weight: bold;
+    font-size: 16px;
+  }
+</style>
+
+<a class='dropdown-trigger btn' href='#' data-target='pub_years'>Year: 2018 </a>
+<ul id="pub_years" class='dropdown-content'>
+  <li> <a href="/publications.html"> All </a></li>
+  
+  
+  <!-- Replace with url_for --->
+  <!--<li> <a href="/publications_2023.html"> 2023 </a></li>-->
+  
+  <li> <a href="/publications_2023.html"> 2023 </a></li>
+  
+  
+  
+  <!-- Replace with url_for --->
+  <!--<li> <a href="/publications_2022.html"> 2022 </a></li>-->
+  
+  <li> <a href="/publications_2022.html"> 2022 </a></li>
+  
+  
+  
+  <!-- Replace with url_for --->
+  <!--<li> <a href="/publications_2021.html"> 2021 </a></li>-->
+  
+  <li> <a href="/publications_2021.html"> 2021 </a></li>
+  
+  
+  
+  <!-- Replace with url_for --->
+  <!--<li> <a href="/publications_2020.html"> 2020 </a></li>-->
+  
+  <li> <a href="/publications_2020.html"> 2020 </a></li>
+  
+  
+  
+  <!-- Replace with url_for --->
+  <!--<li> <a href="/publications_2019.html"> 2019 </a></li>-->
+  
+  <li> <a href="/publications_2019.html"> 2019 </a></li>
+  
+  
+  
+  <!-- Replace with url_for --->
+  <!--<li> <a href="/publications_2018.html"> 2018 </a></li>-->
+  
+  <li> <a href="/publications_2018.html"> 2018 </a></li>
+  
+  
+  
+  <!-- Replace with url_for --->
+  <!--<li> <a href="/publications_2017.html"> 2017 </a></li>-->
+  
+  <li> <a href="/publications_2017.html"> 2017 </a></li>
+  
+  
+  
+  <!-- Replace with url_for --->
+  <!--<li> <a href="/publications_2016.html"> 2016 </a></li>-->
+  
+  <li> <a href="/publications_2016.html"> 2016 </a></li>
+  
+  
+  
+  <!-- Replace with url_for --->
+  <!--<li> <a href="/publications_2015.html"> 2015 </a></li>-->
+  
+  <li> <a href="/publications_2015.html"> 2015 </a></li>
+  
+  
+  
+  <!-- Replace with url_for --->
+  <!--<li> <a href="/publications_2014.html"> 2014 </a></li>-->
+  
+  <li> <a href="/publications_2014.html"> 2014 </a></li>
+  
+  
+  
+  <!-- Replace with url_for --->
+  <!--<li> <a href="/publications_2013.html"> 2013 </a></li>-->
+  
+  <li> <a href="/publications_2013.html"> 2013 </a></li>
+  
+  
+  
+  
+  
+  <!--<script type="text/javascript">
+    var curyear = new Date().getFullYear();
+    for (var i=curyear; i>=2013; i--) {
+      var li = document.createElement("li");
+      var a = document.createElement("a");
+      a.innerHTML = i;
+      //a.href = "/publications.html/" + i;
+      
+      a.href = "/publications_2022.html";
+      
+      li.appendChild(a);
+      document.getElementById("pub_years").appendChild(li);
+    }
+  </script>-->
+</ul>
+
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.dropdown-trigger');
+    var instances = M.Dropdown.init(elems);
+  });
+</script>
+
+
+
+
+
+<div class="row">
+  <div class="col s12 m9">
+    <div id="pubs_container">
+      
+      <div id="Journal publications" class="section scrollspy">
+        <h5 class="teal-text text-darken-2"> Journal publications </h5>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Influencing the bulk power system reserve by dispatching power distribution networks using local energy storage</span>
+            <div class="pubauthor"> M. Bozorg, F. Sossan, J.Y. Le Boudec, M. Paolone </div>
+            <span class="pubcite"> Electric Power Systems Research, 163:270 – 279. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/j/2018_bozorg.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://www.sciencedirect.com/science/article/pii/S0378779618301901">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Enhancing the dispatchability of distribution networks through utility-scale batteries and flexible demand</span>
+            <div class="pubauthor"> L. Fabietti, T. T. Gorecki, E. Namor, F. Sossan, M. Paolone, C. N. Jones </div>
+            <span class="pubcite"> Energy and Buildings, 172:125 – 138. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://www.sciencedirect.com/science/article/pii/S0378778817325197">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Concurrent voltage control and dispatch of active distribution networks by means of smart transformer and storage</span>
+            <div class="pubauthor"> X. Gao, F. Sossan, K. Christakou, M. Paolone, M. Liserre </div>
+            <span class="pubcite"> IEEE Transactions on Industrial Electronics, 65(8):6657–6666. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/j/2018_gao.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/8106710">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Experimental validation of a steady state model synthesis method for a three-phase unbalanced active distribution network feeder</span>
+            <div class="pubauthor"> F. Mahmood, L. Vanfretti, M. Pignati, F. Sossan, M. Paolone </div>
+            <span class="pubcite"> IEEE Access, 6:4042–4053. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8254341">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Control of battery storage systems for the simultaneous provision of multiple services</span>
+            <div class="pubauthor"> E. Namor, F. Sossan, R. Cherkaoui, M. Paolone </div>
+            <span class="pubcite"> IEEE Transactions on Smart Grid, 10(3):2799–2808. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/j/2018_namor.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/8304683">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">A comprehensive assessment of the short-term uncertainty of grid-connected pv systems</span>
+            <div class="pubauthor"> E. Scolari, L. Reyes, F. Sossan, M. Paolone </div>
+            <span class="pubcite"> IEEE Transactions on Sustainable Energy, 9(3):1458–1467. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/j/2018_scolari.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/8247241">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Local estimation of the global horizontal irradiance using an all-sky camera</span>
+            <div class="pubauthor"> E. Scolari, F. Sossan, M. Haure-Touze, M. Paolone </div>
+            <span class="pubcite"> Solar Energy, 173:1225 – 1235. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://www.sciencedirect.com/science/article/abs/pii/S0038092X18308119">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Unsupervised disaggregation of photovoltaic production from composite power flow measurements of heterogeneous prosumers</span>
+            <div class="pubauthor"> F. Sossan, L. Nespoli, V. Medici, M. Paolone </div>
+            <span class="pubcite"> IEEE Transactions on Industrial Informatics, 14(9):3904–3913, 2018. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/j/2018_sossan.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/8253874">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Dispatching stochastic heterogeneous resources accounting for grid and battery losses</span>
+            <div class="pubauthor"> E. Stai, L. Reyes-Chamorro, F. Sossan, J.Y. Le Boudec, M. Paolone </div>
+            <span class="pubcite"> IEEE Transactions on Smart Grid, 9(6):6522–6539. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/j/2018_stai.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/7948761">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+      </div>
+      
+      <div id="Conference publications" class="section scrollspy">
+        <h5 class="teal-text text-darken-2"> Conference publications </h5>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">An ADMM-based coordination and control strategy for PV and storage to dispatch stochastic prosumers: Theory and experimental validation</span>
+            <div class="pubauthor"> R. Gupta, F. Sossan, E. Scolari, E. Namor, L. Fabietti, C. N. Jones, M. Paolone </div>
+            <span class="pubcite"> In 2018 Power Systems Computation Conference (PSCC). </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/c/2018_gupta.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/8450879">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Allocation of frequency control reserve from aggregated resources of active distribution systems</span>
+            <div class="pubauthor"> M. Kalantar-Neyestanaki, M. Bozorg, F. Sossan, R. Cherkaoui </div>
+            <span class="pubcite"> In 2018 Power Systems Computation Conference (PSCC). </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/8442762">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Experimental assessment of the prediction performance of dynamic equivalent circuit models of grid-connected battery energy storage systems</span>
+            <div class="pubauthor"> E. Namor, F. Sossan, E. Scolari, R. Cherkaoui, M. Paolone </div>
+            <span class="pubcite"> In 2018 IEEE International Conference on Innovative Smart Grid Technologies (ISGT). IEEE. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/c/2018_namor.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/8571787">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Quantification of primary frequency control provision from battery energy storage systems connected to active distribution networks</span>
+            <div class="pubauthor"> G.-P. Schiapparelli, S. Massucco, E. Namor, F. Sossan, R. Cherkaoui, M. Paolone </div>
+            <span class="pubcite"> 2018 Power Systems Computation Conference (PSCC). </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/8442554">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">An econometric model of the regulating power price for interconnected power systems: the case of the nord pool market</span>
+            <div class="pubauthor"> A. Valenciano López, M. Bozorg, F. Sossan, M. Paolone </div>
+            <span class="pubcite"> In 15th International Conference on the European Energy Market (EEM). IEEE. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/c/2018_valenciano.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/8469874">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <span class="mycard-title">Dispatch and primary frequency control with electrochemical storage: a system-wise verification</span>
+            <div class="pubauthor"> Y. Zuo, F. Sossan, M. Bozorg, M. Paolone </div>
+            <span class="pubcite"> In 2018 IEEE International Conference on Innovative Smart Grid Technologies (ISGT). IEEE. </span>
+            <span class="pubyear">  </span>
+          </div>
+          <div class="card-action">
+            
+            <a class="waves-effect waves-light teal-text" href="/static/repo/papers/c/2018_zuo.pdf">PDF<i class="material-icons right">file_download</i></a>
+            
+
+            
+            <a class="waves-effect waves-light teal-text" href="https://ieeexplore.ieee.org/document/8571832">Publisher<i class="material-icons right">book</i></a>
+            
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- scrollspy -->
+  <div class="col hide-on-small-only m3">
+    <div class="pushpin" data-target="pubs_container">
+      <ul class="section table-of-contents" >
+        
+        <li><a href="#Journal publications">Journal (9)</a></li>
+        
+        <li><a href="#Conference publications">Conference (6)</a></li>
+        
+        <!--<li><a href="#structure">Conference (0)</a></li>-->
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.scrollspy');
+    var instances = M.ScrollSpy.init(elems);
+
+    elems = document.querySelectorAll('.pushpin');
+    instances = M.Pushpin.init(elems);
+
+  });
+</script>
+
+
+
+
+
+        <!-- End of main content -->
+      </div>
+    </div>
+
+
+
+    <!--footer class="page-footer teal lighten-4">
+      <div class="footer-copyright">
+        <div class="container">
+          <span>Fabrizio Sossan, 2020. </span> <span style="float:right">25/02/2023 08:13:57 </span>
+        </div>
+      </div>
+    </footer>-->
+
+  </main>
+
+</body>
+</html>

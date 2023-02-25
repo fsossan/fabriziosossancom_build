@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- generics -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/static/img/favicon_io/favicon-32.png" sizes="32x32">
+
+  <!-- Android -->
+  <link rel="shortcut icon" sizes="192x192" href=“/static/img/favicon_io/android-chrome-192.png">
+
+  <!-- iOS -->
+  <link rel="apple-touch-icon" href="/static/img/favicon_io/apple-touch-icon.png" sizes="180x180">
+
+  <!-- Windows 8 IE 10-->
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/static/img/favicon_io/favicon-144.png">
+
+  <!— Windows 8.1 + IE11 and above —>
+  <meta name="msapplication-config" content="/static/img/favicon_io/browserconfig.xml" />
+
+  <meta name = "viewport" content = "width=device-width, initial-scale = 1">
+  <title>Fabrizio Sossan's personal webpage </title>
+  <meta name="Description" CONTENT="Fabrizio Sossan's personal webpage">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/static/materialize/css/materialize.min.css">
+  <script src="/static/materialize/js/materialize.min.js"></script>
+
+
+  <style>
+
+    /*.valign-wrapper {flex-wrap: wrap;}*/
+
+    a {
+      color: #009688;
+    }
+
+    h4, h5, h6 {
+      color: #004d40;
+    }
+
+    body,html {
+      color: #111111;
+      background-color: #DDDDDD11;
+      height: 100%;
+    }
+
+    .rps {
+      line-height: 125%;
+      margin-left: 5px;
+      text-align: center;
+    }
+
+    li.spacer {
+      flex: 1;
+    }
+
+    header, main, footer {
+      padding-left: 200px;
+    }
+
+    ul.long {
+      display: flex;
+      min-height: 100%;
+      flex-direction: column;
+    }
+
+    @media only screen and (max-width : 980px) {
+      header, main, footer {
+        padding-left: 0;
+      }
+    }
+
+    div.footer {
+      font-size: 13px;
+      line-height: 150%;
+      padding: 10px;
+    }
+
+    div.footer br {
+      margin: 0em;
+    }
+
+
+    ul.bullet {
+      display: block;
+      list-style-type: square !important;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 20px;
+    }
+
+    ul.bullet li {
+      margin-bottom: 10px;
+    }
+    ul.bullet li::before {
+      content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+      color: black; /* Change the color */
+      font-weight: bold; /* If you want it to be bold */
+      display: inline-block; /* Needed to add space between the bullet and the text */
+      width: 1em; /* Also needed for space (tweak if needed) */
+      margin-left: -1em; /* Also needed for space (tweak if needed) */
+    }
+
+    .reducednavigation {
+      margin: 1px;
+      padding: 5px;
+    }
+
+
+    #nav-mobile li.entries {
+      margin: 1px;
+      margin-top: 0px;
+      padding: 2px;
+      border-bottom: 3px solid #80cbc444;
+    }
+
+    #nav-mobile li.entries_first {
+      //border-top: 2px solid #80cbc444;
+      margin-top: 5px;
+    }
+
+    .summary {
+      padding:10px;
+      border-radius: 20px;
+      margin-left: -20px;
+      margin-top: 4px;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <a href="#" data-target="nav-mobile" class="top-nav sidenav-trigger circle hide-on-large-only">
+        <i class="material-icons teal lighten-5 normal summary">menu</i>
+      </a>
+      <i class="material-icons teal lighten-5 normal" style="visibility:hidden;">menu</i>
+    </div>
+
+    <ul id="nav-mobile" class="sidenav sidenav-fixed long teal lighten-5">
+      <li class="entries entries_first"><a href="/" role="button" class="grey-text text-darken-4"><i class="material-icons left">home</i> Homepage</a></li>
+      <li class="entries"><a href="/resources.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">extension</i> Shared resources</a></li>
+      <li class="entries"><a href="/publications.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">border_color</i>Publications</a></li>
+      <li class="entries"><a href="/students.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">face</i>Students</a></li>
+      <li class="entries"><a href="/teaching.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">local_library</i>Teaching</a></li>
+      <li class="entries"><a href="/projects.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">build</i>Research projects</a></li>
+      <li class="entries"><a href="/seminars.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">directions_walk</i>Seminars & Invited talks</a></li>
+      <li class="entries"><a href="/news.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">event_note</i>News</a></li>
+      <li class="entries"><a href="/static/repo/cv.pdf" role="button" class="grey-text text-darken-4"><i class="material-icons left">school</i>Curriculum Vitae (CV)</a></li>
+      <li class="spacer"> </li>
+      <li>
+        <div class="center footer teal darken-4 white-text text-darken-4" style="border-top: 3px solid #80cbc444">
+          Fabrizio Sossan, 2020. <br/>
+          Latest update: 25/02/2023 08:13:57
+        </div>
+      </li>
+    </ul>
+  </header>
+
+  <script>
+    /*var p = location.pathname.split("/")[1];
+    var el = document.getElementsByTagName('nav')[0].querySelector('a[href=\\/'+p+']');
+    if (el != null) {
+      el.parentElement.setAttribute('class', 'active');
+    }*/
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
+    });
+  </script>
+
+
+  <main>
+    <div class="container">
+      <div class="col s12 m10 offset-m1">
+        <h4 class="header">Fabrizio Sossan's personal webpage</h4>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <!-- Main content -->
+        
+
+<script>
+
+</script>
+
+<style>
+  .image-cropper {
+    width: 180px;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+  .image-cropper img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+  }
+
+  div.rounded {
+    /*border: 3px solid #eeeeee;*/
+    border-radius: 25px;
+    padding: 10px;
+    margin-top: 15px;
+  }
+
+
+  div.headerpic {
+    margin: -10px !important;
+    padding: -10px !important;
+  }
+
+  div.headerpic img {
+    width: 100%;
+    margin: 0px !important;
+    padding: 0px !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+  }
+
+  div.myrounded {
+    /*border: 3px solid #eeeeee;*/
+    border-radius: 20px;
+    padding: 0px !important;
+    margin: 0px !important;
+    overflow: hidden;
+  }
+
+  div.myrounded .title {
+    background-color: #eeeeee;
+    padding: 5px;
+    font-size: 30px;
+  }
+
+  div.myrounded .content {
+    margin: 10px;
+
+  }
+
+
+</style>
+
+
+<div id="intro1" class="scale-transition scale-out rounded">
+  <!--<h4 class="center-align" style="margin-top:-25px; margin-bottom:30px;">Fabrizio Sossan's personal webpage</h4>-->
+  <div class="headerpic">
+    <img src="/static/img/pics/header.png"/>
+  </div>
+  <p class="light">
+    I am associate professor in electrical power systems at the <a href="https://www.hes-so.ch/domaines-et-hautes-ecoles/hautes-ecoles/hes-so-valais-wallis/haute-ecole-dingenierie-hei">School of Engineering of the University of Applied Sciences of Western Switzerland</a>, in Wallis.
+    My research interests are planning, scheduling, and control paradigms for distributed energy resources, in particular energy storage, in power and energy networks. My objective is to understand how heterogeneous applications and different operators' objectives can be harmonized 
+    and coordinated to enable feasible techno-economic operations of future energy systems and a transition to renewable resources. <br/><br/>
+
+    <a href="https://scholar.google.fr/citations?hl=en&user=1VMWrxIAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a> | <a href="https://www.researchgate.net/profile/Fabrizio_Sossan">Research Gate</a> | <a href="https://www.scopus.com/authid/detail.uri?authorId=36915836500">Scopus</a> | <a href="/static/repo/cv.pdf">Curriculum Vitae</a>
+  </p>
+</div>
+
+
+<div id="intro2" class="scale-transition scale-out rounded">
+  <div class="row valign-wrapper">
+    <div class="col s6">
+      <h5>Contact information</h5>
+      Prof. Fabrizio Sossan <br>
+      HES-SO Valais - Wallis  <br>
+      23 Rue de l'industrie  <br>
+      1950 Sion, Switzerland <br>
+      fabrizio.soss<span id="domain"></span> <br/><br/>
+      <script>
+        document.getElementById('domain').innerHTML='an@hevs.ch';
+      </script>
+      <!--<a href="https://goo.gl/maps/6XgAcLL6Sbq5L1qj8" class="waves-effect waves-light btn teal lighten-4 grey-text grey-text text-darken-4"> See on map</a>-->
+    </div>
+    <div class="col s6">
+      <div class="">
+        <div class="image-cropper">
+        <img src="/static/img/headshot.jpg" style="height:100%">
+        </div>
+      </div>
+    </div>
+  </div>
+<!--<div class="row">
+  <div class="col s12">
+    <span><b>For students</b> &nbsp;&nbsp; I typically have availabilities for thesis and internships in a variety of areas, from theoretical to experimental. If you are interested in my research topics and pursuing a thesis or internship, and have solid theoretical skills and knowledge of power/energy systems operations and coding skills, drop me an email with a motivation statement.</span>
+  </div>
+</div>-->
+</div>
+
+
+<div id="intro3" class="scale-transition scale-out rounded">
+  <!--<div class="row valign-wrapper">-->
+  <h5>Recent news </h5>
+  <ul class="bullet">
+    
+    <li>January 2023: New journal paper entitled "Optimized Planning of Chargers for Electric Vehicles in Distribution Grids Includi ... <a href="#" onclick="this.parentNode.style.display='none';this.parentNode.nextSibling.nextSibling.style.display='block'; return false;">read more</a>. </li>
+    <li style="display:none">January 2023: New journal paper entitled "Optimized Planning of Chargers for Electric Vehicles in Distribution Grids Including PV Self-consumption and Cooperative Vehicle Owners". Congratulations to the first author Biswarup! Paper available <a href='/static/repo/papers/j/2023_biswarup.pdf'>here</a></li>
+    
+    <li>November 2022: I started a new professional appointment at the University of Applied Science of Western Switzerland (HES-SO V ... <a href="#" onclick="this.parentNode.style.display='none';this.parentNode.nextSibling.nextSibling.style.display='block'; return false;">read more</a>. </li>
+    <li style="display:none">November 2022: I started a new professional appointment at the University of Applied Science of Western Switzerland (HES-SO Valais-Wallis), where I am associate professor of electrical power systems.</li>
+    
+    <li>March 2022: I gave a seminar at the Waterloo Institute of Sustainable Energy (WISE) of the University of Waterloo (Canada) ... <a href="#" onclick="this.parentNode.style.display='none';this.parentNode.nextSibling.nextSibling.style.display='block'; return false;">read more</a>. </li>
+    <li style="display:none">March 2022: I gave a seminar at the Waterloo Institute of Sustainable Energy (WISE) of the University of Waterloo (Canada) on model predictive control to reduce the fatigue in medium- and high-head hydropower plants' penstocks and coupling with battery energy storage systems.</li>
+    
+    <li>March 2022: New journal paper: "Stress-informed Control of Medium- and High-head Hydropower Plants to Reduce Penstock Fati ... <a href="#" onclick="this.parentNode.style.display='none';this.parentNode.nextSibling.nextSibling.style.display='block'; return false;">read more</a>. </li>
+    <li style="display:none">March 2022: New journal paper: "Stress-informed Control of Medium- and High-head Hydropower Plants to Reduce Penstock Fatigue", available <a href='/static/repo/papers/j/2022_cassano_a.pdf'>here</a>.</li>
+    
+    <li>February 2022: Two papers accepted for the next Power Systems Computation Conference! They are about MPC for hybrid hydropowe ... <a href="#" onclick="this.parentNode.style.display='none';this.parentNode.nextSibling.nextSibling.style.display='block'; return false;">read more</a>. </li>
+    <li style="display:none">February 2022: Two papers accepted for the next Power Systems Computation Conference! They are about MPC for hybrid hydropower [<a href='https://arxiv.org/pdf/2111.05004.pdf'>link</a>], and model-less robust voltage control for distribution grids [<a href='https://arxiv.org/pdf/2201.04192.pdf'>link</a>]. Congrats Stefano and Rahul!</li>
+    
+    <li>January 2022: My research project on integrated energy systems has been funded with € 300'000 by Region Sud - Provence Alpes ... <a href="#" onclick="this.parentNode.style.display='none';this.parentNode.nextSibling.nextSibling.style.display='block'; return false;">read more</a>. </li>
+    <li style="display:none">January 2022: My research project on integrated energy systems has been funded with € 300'000 by Region Sud - Provence Alpes Cote Cote d'Azur and MINES ParisTech under the framework 'AAP Recherche'. It will support the creation of a beyond-state-of-the-art microgrid laboratory with multiple energy carriers at MINES ParisTech in Sophia Antipolis.</li>
+    
+  </ul>
+  <a href="/news.html" class="waves-effect waves-light btn teal lighten-4 grey-text grey-text text-darken-4"> All news </a>
+</div>
+
+
+
+
+
+<div id="intro4" class="scale-transition scale-out rounded">
+  <h5>Bio and research experience</h5>
+  <p class="light">
+    I got my master's degrees in Computer Engineering from the University of Genova (Italy) in 2010. In 2014, I obtained my Ph.D. in Electrical Engineering from the Technical University of Denmark DTU with a work on control of flexible demand in application to providing ancillary services to the power grid. From 2014 to 2017, I was a postdoctoral fellow with the Distributed Electrical Systems Laboratory at EPFL (Switzerland), working on integration of battery energy storage systems in the grid. In 2018, I was a guest scientist at NREL (USA) working on an independent research project on cooperative dispatch schemes for distribution grids and a scientist with the Supply of Electricity program of the Swiss Competence Center for Energy Research at ETH (Switzerland). 
+    From 2019 to 2022, I was associate professor at PSL - Ecole de Mines de Paris (MINES Paristech). <br/><br/>
+
+    Working for among the world's most advanced laboratories and experimental facilities with great researchers shaped my research vision on the methodological barriers we need to tackle to achieve the energy transition.
+  </p>
+</div>
+
+
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems);
+  });
+</script>
+
+
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() { load_intro(); });
+
+
+  function load_intro() {
+    setTimeout(function(){
+      var elem = document.getElementById('intro1');
+      elem.classList.add('scale-in');
+    }, 200);
+    setTimeout(function(){
+      var elem = document.getElementById('intro2');
+      elem.classList.add('scale-in');
+    }, 400);
+    setTimeout(function(){
+      var elem = document.getElementById('intro3');
+      elem.classList.add('scale-in');
+    }, 800);
+    setTimeout(function(){
+      var elem = document.getElementById('intro4');
+      elem.classList.add('scale-in');
+    }, 1200);
+
+  };
+</script>
+
+
+
+        <!-- End of main content -->
+      </div>
+    </div>
+
+
+
+    <!--footer class="page-footer teal lighten-4">
+      <div class="footer-copyright">
+        <div class="container">
+          <span>Fabrizio Sossan, 2020. </span> <span style="float:right">25/02/2023 08:13:57 </span>
+        </div>
+      </div>
+    </footer>-->
+
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- generics -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/static/img/favicon_io/favicon-32.png" sizes="32x32">
+
+  <!-- Android -->
+  <link rel="shortcut icon" sizes="192x192" href=“/static/img/favicon_io/android-chrome-192.png">
+
+  <!-- iOS -->
+  <link rel="apple-touch-icon" href="/static/img/favicon_io/apple-touch-icon.png" sizes="180x180">
+
+  <!-- Windows 8 IE 10-->
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/static/img/favicon_io/favicon-144.png">
+
+  <!— Windows 8.1 + IE11 and above —>
+  <meta name="msapplication-config" content="/static/img/favicon_io/browserconfig.xml" />
+
+  <meta name = "viewport" content = "width=device-width, initial-scale = 1">
+  <title>Research projects </title>
+  <meta name="Description" CONTENT="Fabrizio Sossan's personal webpage">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/static/materialize/css/materialize.min.css">
+  <script src="/static/materialize/js/materialize.min.js"></script>
+
+
+  <style>
+
+    /*.valign-wrapper {flex-wrap: wrap;}*/
+
+    a {
+      color: #009688;
+    }
+
+    h4, h5, h6 {
+      color: #004d40;
+    }
+
+    body,html {
+      color: #111111;
+      background-color: #DDDDDD11;
+      height: 100%;
+    }
+
+    .rps {
+      line-height: 125%;
+      margin-left: 5px;
+      text-align: center;
+    }
+
+    li.spacer {
+      flex: 1;
+    }
+
+    header, main, footer {
+      padding-left: 200px;
+    }
+
+    ul.long {
+      display: flex;
+      min-height: 100%;
+      flex-direction: column;
+    }
+
+    @media only screen and (max-width : 980px) {
+      header, main, footer {
+        padding-left: 0;
+      }
+    }
+
+    div.footer {
+      font-size: 13px;
+      line-height: 150%;
+      padding: 10px;
+    }
+
+    div.footer br {
+      margin: 0em;
+    }
+
+
+    ul.bullet {
+      display: block;
+      list-style-type: square !important;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 20px;
+    }
+
+    ul.bullet li {
+      margin-bottom: 10px;
+    }
+    ul.bullet li::before {
+      content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+      color: black; /* Change the color */
+      font-weight: bold; /* If you want it to be bold */
+      display: inline-block; /* Needed to add space between the bullet and the text */
+      width: 1em; /* Also needed for space (tweak if needed) */
+      margin-left: -1em; /* Also needed for space (tweak if needed) */
+    }
+
+    .reducednavigation {
+      margin: 1px;
+      padding: 5px;
+    }
+
+
+    #nav-mobile li.entries {
+      margin: 1px;
+      margin-top: 0px;
+      padding: 2px;
+      border-bottom: 3px solid #80cbc444;
+    }
+
+    #nav-mobile li.entries_first {
+      //border-top: 2px solid #80cbc444;
+      margin-top: 5px;
+    }
+
+    .summary {
+      padding:10px;
+      border-radius: 20px;
+      margin-left: -20px;
+      margin-top: 4px;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <a href="#" data-target="nav-mobile" class="top-nav sidenav-trigger circle hide-on-large-only">
+        <i class="material-icons teal lighten-5 normal summary">menu</i>
+      </a>
+      <i class="material-icons teal lighten-5 normal" style="visibility:hidden;">menu</i>
+    </div>
+
+    <ul id="nav-mobile" class="sidenav sidenav-fixed long teal lighten-5">
+      <li class="entries entries_first"><a href="/" role="button" class="grey-text text-darken-4"><i class="material-icons left">home</i> Homepage</a></li>
+      <li class="entries"><a href="/resources.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">extension</i> Shared resources</a></li>
+      <li class="entries"><a href="/publications.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">border_color</i>Publications</a></li>
+      <li class="entries"><a href="/students.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">face</i>Students</a></li>
+      <li class="entries"><a href="/teaching.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">local_library</i>Teaching</a></li>
+      <li class="entries"><a href="/projects.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">build</i>Research projects</a></li>
+      <li class="entries"><a href="/seminars.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">directions_walk</i>Seminars & Invited talks</a></li>
+      <li class="entries"><a href="/news.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">event_note</i>News</a></li>
+      <li class="entries"><a href="/static/repo/cv.pdf" role="button" class="grey-text text-darken-4"><i class="material-icons left">school</i>Curriculum Vitae (CV)</a></li>
+      <li class="spacer"> </li>
+      <li>
+        <div class="center footer teal darken-4 white-text text-darken-4" style="border-top: 3px solid #80cbc444">
+          Fabrizio Sossan, 2020. <br/>
+          Latest update: 25/02/2023 08:13:57
+        </div>
+      </li>
+    </ul>
+  </header>
+
+  <script>
+    /*var p = location.pathname.split("/")[1];
+    var el = document.getElementsByTagName('nav')[0].querySelector('a[href=\\/'+p+']');
+    if (el != null) {
+      el.parentElement.setAttribute('class', 'active');
+    }*/
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
+    });
+  </script>
+
+
+  <main>
+    <div class="container">
+      <div class="col s12 m10 offset-m1">
+        <h4 class="header">Research projects</h4>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <!-- Main content -->
+        
+
+<style>
+  span.mycard-title {
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+  }
+</style>
+
+<span class="light">
+  This page lists the research projects where I have contributed significantly to the development of the proposal and I am principal investigator for my institution.
+</span>
+
+
+<div class="card">
+
+  <div class="card-content">
+    <span class="mycard-title"> XFLEX-HYDRO - Extending hydrpower flexibility </span>
+    Gathering 19 European academic and industrial partners, this H2020 innovation action will research and demonstrate technologies to improve the flexibility of hydropower stations and support the energy transition. My role is to investigate the control of combined hydropower and batteries to reduce the wear and tear of the mechanical components and increase the regulation capability. The total project budget is €15 million.
+  </div>
+  <div class="card-action">
+    <a class="btn waves-effect waves-light" href="https://xflexhydro.net">Project website</a>
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="card-content">
+    <span class="mycard-title"> Optimization of Regional Infrastructures for the Transition to Electric and Connected  Autonomous Vehicles </span>
+    Four European research partners will investigate the implications of autonomous mobility for urban planning and power grids in this project supported by the Smart Energy Systems program of ERA-NET. I am leader of work package 4, that will study the impact of autonomous electric vehicles on existing power distribution grids, considering both operational and grid planning aspects. The total project budget is €1 million.
+  </div>
+  <div class="card-action">
+    <a class="btn waves-effect waves-light" href="https://evaproject.eu">Project website</a>
+  </div>
+</div>
+
+
+
+
+
+        <!-- End of main content -->
+      </div>
+    </div>
+
+
+
+    <!--footer class="page-footer teal lighten-4">
+      <div class="footer-copyright">
+        <div class="container">
+          <span>Fabrizio Sossan, 2020. </span> <span style="float:right">25/02/2023 08:13:57 </span>
+        </div>
+      </div>
+    </footer>-->
+
+  </main>
+
+</body>
+</html>
