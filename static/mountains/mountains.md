@@ -2,6 +2,8 @@
 
 A log of (some of my) outings. Entries before approx. 2023 not reported.
 
+([Back to the home page](/))
+
 ## Le petit Velan, couloirs E and W, 7 Jan 2023
 From Bourg St Pierre, little snow in the east couloir, descended west, and closed the loop through the Refuge du Velan.  
 ![alt text](./pic/23petit_velan.png)
