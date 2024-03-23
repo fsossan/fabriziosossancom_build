@@ -105,7 +105,7 @@ Frustrating weekend in Grimsel Eldorado :D. Climbed the first few pitches of Mot
 ![alt text](./pic/23eldorado.png)
 
 
-## Around Furka pass, 12 Aug 2023
+## Furka pass, 12 Aug 2023
 Hannibalturm on the first day. Climbed Evalin to Furkahorn on the second, amazing route. 
 
 ![alt text](./pic/23hannibaltower.png)
