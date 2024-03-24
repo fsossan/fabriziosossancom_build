@@ -29,10 +29,15 @@ From north-entrance of GSB tunnel. With Alex! Thanks for the visit!
 ## Pointe des Grands, 17 Feb 2023
 From Trient. With G. and A.
 
-## Gsur (?), 5 Mar 2023
+## Landvogtehore, 5 Mar 2023
 My first time in Diemtigtal. Going to become a classic...! 
 
 ![alt text](./pic/23gsur.png)
+
+## Rothorn, 6 Mar 2023
+Hard snow on top, with couteaux.
+
+![alt text](./pic/23rothorn.png)
 
 ## Spitzhorli, Apr 3 2023
 From Simplon pass. 
@@ -53,7 +58,9 @@ With lift to l'index, Col du Belveder, then down the couloir, and to Buet. Very 
 ## Rocca Sbarua, 13 Apr 2023
 Sun is over in chamonix valley. Going south looking for good weather.  
 
-![alt text](./pic/23sbarua.png)
+![alt text](./pic/23sbarua_G.png)
+
+![alt text](./pic/23sbarua_F.png)
 
 
 ## Mottarone, 15 Apr 2023
@@ -61,21 +68,22 @@ Single-pitches in Mottarone. Not too great, not too bad.  Good hike.
 
 ![alt text](./pic/23mottarone.png)
 
-## [ .. ] Untracked outings
+## Untracked outings
+Can't remember where we went!
 
 ## Sustenhorn, 22 May 2023
 Through the classic itinerary from Sustenpass. I broke my binding. Good conditions otherwise. 
 
 ![alt text](./pic/23sustenhorn.png)
 
-## Wiwannihorn, 27 and 28 May 2023
-Amazing Wiwannihorn! Walking up from the valley, shelter, and two climbing routes. Still snow on the routes and on the descent. 
+## Wiwannihorn, weekend of 27 and 28 May 2023
+Amazing Wiwannihorn! Walking up from the valley, night in the shelter, and two climbing routes (Wi vom Fass, Verborgene Tenze). Still snow on the routes and on the descent. 
 
 ![alt text](./pic/23wiwannihorn.png)
 
 
 ## Traverse Jungfraujoch - Loetschental, 29 May 2023
-Traversee from Jungfraujoch to Loetschental. That's the end of an excellent ski-touring season!
+Traversee from Jungfraujoch to Loetschental. That's the end of an excellent ski-touring season! With G.'s skies. Short detour to avoid a thin snow brigde over huge crevasse (while we have seen others passing). Saw someone coming down from the north face of Aletschorn with about 5 turns in total... amazing!
 
 ![alt text](./pic/23junlon.png)
 
@@ -88,27 +96,70 @@ I cheated on the crux.
 
 ![alt text](./pic/23sagitt.png)
 
+## Punta Udine, 18 Jun 2023
+Visto per il Peru'. Very nice. Rain on the last pitch. Descend with crampons on the north face. On the way down, recover the material of two Italian which helped two Spanish who wore approach shoes and could not go down. Discovered on the top that I climbed with the laptop in the backpack (deadline of the flagship is approaching..!).
+
+![alt text](./pic/23udine.png)
+
+## Punta Venezia, 19 Jun 2023
+Fable de Venise. Stopped at the first tower.
+
+![alt text](./pic/23venezia.png)
+
+
+## Rocca dei campanili - Mongioie, 21 Jun 2023
+Climbed Alba Celtica ed Pellegrinaggio in Oriente (3 pitches).
+
+![alt text](./pic/23mongioie.png)
+
+## Lago d'Agaro, 24 Jun 2023
+Done two routes. The fox ate the nut cake in the night! Bad!
+
+## Jeggihorn, 1 Jul 2023
+Climbed Netlo S-O. Cold night in the tent.
+
+![alt text](./pic/23jeggihorn.png)
+
 ## Bietschhorn ridge SE-N, 9-11 Jul 2023 
-From Baltschiederklause to Bietschhorn Hutte through the summit, in 14 hours. Good conditions. Nice climb on the way up; descend never ends. 
+From Baltschiederklause to Bietschhorn Hutte through the summit, in 14 hours. Nice climb on the way up; descend never ends. Started at 5:00, summit at 10:30, at the shelter at 19:00. In the glacier, ended up in the water until the knee. Traversee on the snow was good. Climb up efficient. On the way down, found a lot of snow and frozen patches, had to protect a lot in these places. 
+
 
 ![alt text](./pic/23bietschhorn.png)
 
 
-## Val Ferret, Week of the 14 of Jul 2023
-Climbing week in the granite of Val Ferret. Stayed in the busy and moderately dirty winter room of Dalmazzi. Climbed Done La Beresina, Aiguille Rouge de Triolet, Genepi (Parete dei Titani), and one down in the valley. 
+## Val Ferret, 14 Jul 2023
+A few days clmibing on the granite of Val Ferret. Stayed in the busy and moderately dirty winter room of Dalmazzi. My questions ("*scusi, ma il Dalmazzi e' aperto?*", "*il locale invernale del Dalmazzi e' tenuto bene?*") to literally everyone in Courmayeur are now legendary. Climbs: La Beresina, Les chamois volants (with its amazing 17 rappels) on Monts Rouges de Triolet, Genepi (Parete dei Titani), and il gatto e la volpe (without headwall).
+
+![alt text](./pic/23ferret_beresina.png)
 
 ![alt text](./pic/23ferret.png)
 
+
+
 ## Eldorado, 30 Jul 2023
-Frustrating weekend in Grimsel Eldorado :D. Climbed the first few pitches of Motorhead before the sunset on the first day. The second day, gave it up at the first pitch (!) of Weisse Dame (?). 
+Frustrating weekend in Grimsel Eldorado :D. Climbed the first few pitches of Motorhead before the sunset on the first day. The second day, gave it up at the first pitch (!) Gletscher Weiss.
 
 ![alt text](./pic/23eldorado.png)
 
+![alt text](./pic/23eldorado_1.png)
+
+
+## Gallihorn, 3 Aug 2023
+Climbed Gaelliwaendli. Pure plaisir. Had to regain motivation after the Eldorado defeat :).
+
+![alt text](./pic/23gallihorn.png)
+
+## Alpe Nimi, 7 Aug 2023
+Two-day hike with friends in Canton Ticino. A lot of goats. A lot of cheese.
+
+![alt text](./pic/23alpenimi.png)
 
 ## Furka pass, 12 Aug 2023
-Hannibalturm on the first day. Climbed Evalin to Furkahorn on the second, amazing route. 
+Hannibalturm on the first day. Climbed Evalin to Furkahorn on the second day, amazing route. 
 
 ![alt text](./pic/23hannibaltower.png)
+
+![alt text](./pic/23evalin.png)
 
 
 ## Grindelwald, 15 Aug 2023
