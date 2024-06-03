@@ -175,20 +175,47 @@ In 3 day, from Naters. Very pretty and in good conditions. Precautionasly, with 
 
 
 ## Val Masino, 2 Sep 2023
-Stayed at Gianetti (Met Cedric in the shelter :D) and Allievi. Climbed Punta Torelli (via Mauri-Fiorelli, cold!) Punta Allievi (Spigolo Gervasutti, tres bien passé!), Spigolo Gervasutti. In the valley, stayed at Lo Scoiattolo. On the way back, climbed Pizzo del Prevat (north-east ridge) da Capanna Leit. Very pretty.
+Stayed at Gianetti (Met Cedric in the shelter :D) and Allievi. Climbed Punta Torelli (via Mauri-Fiorelli, cold!) Punta Allievi (Spigolo Gervasutti, tres bien passé!), Spigolo Gervasutti. In the valley, stayed at Lo Scoiattolo. 
 
 ![alt text](./pic/23allievi.png)
 
 
-## Brusson and Castore, weekend of 7 Oct 2023
-Visited Giovanni and Elisa in Brusson and used the chance to climb the south ridge of Castore ([this route](https://www.gulliver.it/itinerari/castore-cresta-sud/)). Nice, but a bit sketchy sometimes. Down from the normal way. Sleeped in the winter room of Rifugio Sella.
+## Pizzo del Prevat, 4 Sep 2023
+Back from Italy, we climbed Pizzo del Prevat (north-east ridge) da Capanna Leit. Very pretty!
 
+![alt text](./pic/23prevat.png)
+
+## Albertheim (Furkapass), 9 and 10 Sep 2023
+Climbed Mangolito to Winterstock on the first day. On the second, climbed the SW pillier of Dammazwillinge. With Martina and Mathias.
+
+![alt text](./pic/23winterstock.png)
+![alt text](./pic/23dammazwillinge.png)
+
+
+## Gallihorn, 17 Sep 2023
+Lowenherz. Crux very exposed. No pics!
+
+
+## Grand Perron, 14 Sep 2023
+Paroi de Barberine, mille et un pattes. With Ted and Eoin. Nice friends, less nice climb :D.
+
+## Grand Perron, 15 Sep 2023
+Au cour de l'anticyclone. Very pretty route. Effortless 6b of G.!
+ 
+![alt text](./pic/23perron.png)
+
+
+
+## Brusson and Castore, weekend of 7 Oct 2023
+Visited Giovanni and Elisa in Brusson and used the chance to climb the south ridge of Castore ([this route](https://www.gulliver.it/itinerari/castore-cresta-sud/)). Nice, but a bit sketchy sometimes. Down from the normal way. Slept in the winter room of Rifugio Sella. Down with the jeep from the col di bettaforca.
 
 ![alt text](./pic/23castore.png)
 
 
+
+
+
 ## Climbing week in Corsica, 27 Oct 2023
 Definetely to be repeated.
-
 
 ![alt text](./pic/23corsica.png)
