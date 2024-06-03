@@ -204,6 +204,10 @@ Au cour de l'anticyclone. Very pretty route. Effortless 6b of G.!
  
 ![alt text](./pic/23perron.png)
 
+## San Domenic0, 1 Oct 2023
+On the way back from Lorenzo and Maria wedding in Bologna, stop in San Domenico di Varzo for climbing Fifth Avenue. Very pretty! Short rope when rapelling. Bring a double rope next time!
+
+![alt text](./pic/23sandomenico.png)
 
 
 ## Brusson and Castore, weekend of 7 Oct 2023
@@ -213,9 +217,19 @@ Visited Giovanni and Elisa in Brusson and used the chance to climb the south rid
 
 
 
-
-
 ## Climbing week in Corsica, 27 Oct 2023
-Definetely to be repeated.
+Mostly Restonica valley. Definetely to be repeated.
 
 ![alt text](./pic/23corsica.png)
+
+## Arnad, 11 and 12 Nov 2023
+Climbed in Paretone di Arnad, Monte Strutto, and Albard di Bard (quattro amici al bar and another easy one, with the second being much nicer). 
+
+![alt text](./pic/23paretone.png)
+
+## Pontemaglio, 20 Nov
+Climbed Pachamana. Crazy passage in the dihedral. Highlight of the day was the focaccia in the morning! And nice bike tour.
+
+![alt text](./pic/23pachamama2.png)
+![alt text](./pic/23pachamama1.png)
+
