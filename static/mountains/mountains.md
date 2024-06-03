@@ -227,9 +227,30 @@ Climbed in Paretone di Arnad, Monte Strutto, and Albard di Bard (quattro amici a
 
 ![alt text](./pic/23paretone.png)
 
-## Pontemaglio, 20 Nov
-Climbed Pachamana. Crazy passage in the dihedral. Highlight of the day was the focaccia in the morning! And nice bike tour.
+## Pontemaglio, 20 Nov 2023
+And the last climb of the year is: Pachamana in Pontemaglio! Crazy passage in the dihedral. Highlight of the day was the focaccia in the morning! And nice bike tour.
 
 ![alt text](./pic/23pachamama2.png)
 ![alt text](./pic/23pachamama1.png)
 
+
+## Cross-country skiing, 26 Nov 2023
+Yay, snow! Cross-country skiing in Engstligenalp with a mild temperature of -20 degree Celsius.
+
+![alt text](./pic/23engstligenalp.png)
+
+
+## Meniggrat, 27 Nov 2023
+First ski touring of the season. Little snow.
+
+![alt text](./pic/23meniggrat.png)
+
+## From Greberegg down to Thun lake in Leissigen, 2 Dec 2023 
+If we could sum up all the snow we got this winter, we would have snow until late summer.
+
+![alt text](./pic/23leisigen.png)
+
+## Albristhubel, 3 Dec 2023 
+From St. Stephan.
+
+![alt text](./pic/23albristhubel.png)
