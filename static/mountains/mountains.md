@@ -108,7 +108,7 @@ Fable de Venise. Stopped at the first tower.
 
 
 ## Rocca dei campanili - Mongioie, 21 Jun 2023
-Climbed Alba Celtica ed Pellegrinaggio in Oriente (3 pitches).
+Climbed Alba Celtica ed Pellegrinaggio in Oriente (3 pitches). Spot the lama in the pic!
 
 ![alt text](./pic/23mongioie.png)
 
@@ -251,6 +251,7 @@ If we could sum up all the snow we got this winter, we would have snow until lat
 ![alt text](./pic/23leisigen.png)
 
 ## Albristhubel, 3 Dec 2023 
-From St. Stephan.
+From St. Stephan. Nearly too much snow to ski down.
 
 ![alt text](./pic/23albristhubel.png)
+
