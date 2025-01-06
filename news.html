@@ -1,191 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!doctype html>
+<html lang="en">
+
 <head>
   <meta charset="utf-8">
-
-  <!-- generics -->
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/static/img/favicon_io/favicon-32.png" sizes="32x32">
-
-  <!-- Android -->
-  <link rel="shortcut icon" sizes="192x192" href=“/static/img/favicon_io/android-chrome-192.png">
-
-  <!-- iOS -->
-  <link rel="apple-touch-icon" href="/static/img/favicon_io/apple-touch-icon.png" sizes="180x180">
-
-  <!-- Windows 8 IE 10-->
-  <meta name="msapplication-TileColor" content="#FFFFFF">
-  <meta name="msapplication-TileImage" content="/static/img/favicon_io/favicon-144.png">
-
-  <!— Windows 8.1 + IE11 and above —>
-  <meta name="msapplication-config" content="/static/img/favicon_io/browserconfig.xml" />
-
-  <meta name = "viewport" content = "width=device-width, initial-scale = 1">
-  <title>News </title>
-  <meta name="Description" CONTENT="Fabrizio Sossan's personal webpage">
+  <title>News - Gridlab HES-SO Valais-Wallis</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="/static/materialize/css/materialize.min.css">
-  <script src="/static/materialize/js/materialize.min.js"></script>
+  <link type="text/css" rel="stylesheet" href="/static/css/materialize.min.css" media="screen,projection" />
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-
-  <style>
-
-    /*.valign-wrapper {flex-wrap: wrap;}*/
-
-    a {
-      color: #009688;
-    }
-
-    h4, h5, h6 {
-      color: #004d40;
-    }
-
-    body,html {
-      color: #111111;
-      background-color: #DDDDDD11;
-      height: 100%;
-    }
-
-    .rps {
-      line-height: 125%;
-      margin-left: 5px;
-      text-align: center;
-    }
-
-    li.spacer {
-      flex: 1;
-    }
-
-    header, main, footer {
-      padding-left: 200px;
-    }
-
-    ul.long {
-      display: flex;
-      min-height: 100%;
-      flex-direction: column;
-    }
-
-    @media only screen and (max-width : 980px) {
-      header, main, footer {
-        padding-left: 0;
-      }
-    }
-
-    div.footer {
-      font-size: 13px;
-      line-height: 150%;
-      padding: 10px;
-    }
-
-    div.footer br {
-      margin: 0em;
-    }
-
-
-    ul.bullet {
-      display: block;
-      list-style-type: square !important;
-      margin-left: 0;
-      margin-right: 0;
-      padding-left: 20px;
-    }
-
-    ul.bullet li {
-      margin-bottom: 10px;
-    }
-    ul.bullet li::before {
-      content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-      color: black; /* Change the color */
-      font-weight: bold; /* If you want it to be bold */
-      display: inline-block; /* Needed to add space between the bullet and the text */
-      width: 1em; /* Also needed for space (tweak if needed) */
-      margin-left: -1em; /* Also needed for space (tweak if needed) */
-    }
-
-    .reducednavigation {
-      margin: 1px;
-      padding: 5px;
-    }
-
-
-    #nav-mobile li.entries {
-      margin: 1px;
-      margin-top: 0px;
-      padding: 2px;
-      border-bottom: 3px solid #80cbc444;
-    }
-
-    #nav-mobile li.entries_first {
-      //border-top: 2px solid #80cbc444;
-      margin-top: 5px;
-    }
-
-    .summary {
-      padding:10px;
-      border-radius: 20px;
-      margin-left: -20px;
-      margin-top: 4px;
-    }
-
-  </style>
-
+  <link rel="icon" href="/static/favicon_io/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="/static/favicon_io/site.webmanifest">
 </head>
-<body>
 
-  <header>
-    <div class="container">
-      <a href="#" data-target="nav-mobile" class="top-nav sidenav-trigger circle hide-on-large-only">
-        <i class="material-icons teal lighten-5 normal summary">menu</i>
-      </a>
-      <i class="material-icons teal lighten-5 normal" style="visibility:hidden;">menu</i>
+<style>
+  a {
+    color: #b71c1c;
+    font-weight: 500;
+  }
+</style>
+
+<body class="grey-text text-darken-3">
+  <nav>
+    <div class="nav-wrapper grey darken-4 white-text">
+      <a href="/" class="brand-logo red-text">&nbsp; <i class="material-icons left" style="font-size: 48px;">bolt</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="resources.html">Shared resources</a></li>
+        <li><a href="seminars.html">Seminars</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="static/repo/cv.pdf">CV</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <ul id="nav-mobile" class="sidenav sidenav-fixed long teal lighten-5">
-      <li class="entries entries_first"><a href="/" role="button" class="grey-text text-darken-4"><i class="material-icons left">home</i> Homepage</a></li>
-      <li class="entries"><a href="/resources.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">extension</i> Shared resources</a></li>
-      <li class="entries"><a href="/publications.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">border_color</i>Publications</a></li>
-      <li class="entries"><a href="/students.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">face</i>Students</a></li>
-      <li class="entries"><a href="/teaching.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">local_library</i>Teaching</a></li>
-      <li class="entries"><a href="/projects.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">build</i>Research projects</a></li>
-      <li class="entries"><a href="/seminars.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">directions_walk</i>Seminars & Invited talks</a></li>
-      <li class="entries"><a href="/news.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">event_note</i>News</a></li>
-      <li class="entries"><a href="/static/repo/cv.pdf" role="button" class="grey-text text-darken-4"><i class="material-icons left">school</i>Curriculum Vitae (CV)</a></li>
-      <li class="spacer"> </li>
-      <li>
-        <div class="center footer teal darken-4 white-text text-darken-4" style="border-top: 3px solid #80cbc444">
-          Fabrizio Sossan, 2020. <br/>
-          Latest update: 06/11/2024 03:37:02
-        </div>
-      </li>
-    </ul>
-  </header>
-
-  <script>
-    /*var p = location.pathname.split("/")[1];
-    var el = document.getElementsByTagName('nav')[0].querySelector('a[href=\\/'+p+']');
-    if (el != null) {
-      el.parentElement.setAttribute('class', 'active');
-    }*/
-    document.addEventListener('DOMContentLoaded', function() {
-      var elems = document.querySelectorAll('.sidenav');
-      var instances = M.Sidenav.init(elems);
-    });
-  </script>
-
-
-  <main>
-    <div class="container">
-      <div class="col s12 m10 offset-m1">
-        <h4 class="header">News</h4>
-      </div>
+  <div class="container">
+    <div class="col s12 m10 offset-m1">
+      <h4 class="header">News</h4>
     </div>
+  </div>
 
-    <div class="container">
-      <div class="row">
-        <!-- Main content -->
-        
+  <div class="container">
+    <!-- Main content -->
+    
 
 <style>
 span.mycard-title {
@@ -196,13 +61,13 @@ span.mycard-title {
 
 
 
-<a id='Nov2024Ian'> </a>
+<a id=''> </a>
 <div class="card">
   <div class="card-content">
     <div class="row valign-wrapper">
 
         <div class="col s12">
-          <span class="mycard-title">Nov 2024</span>
+          <span class="mycard-title">2024 November</span>
           <p>
             I gave a talk on the needs for energy storage in distribution grids at the directors of the Swiss-Italian DSOs. Thanks <a href="https://www.strom.ch/fr">VSE/AES</a> for the invitation!
           </p>
@@ -213,13 +78,13 @@ span.mycard-title {
   </div>
 </div>
 
-<a id='Sep2024Itn'> </a>
+<a id=''> </a>
 <div class="card">
   <div class="card-content">
     <div class="row valign-wrapper">
 
         <div class="col s12">
-          <span class="mycard-title">September 2024</span>
+          <span class="mycard-title">2024 September</span>
           <p>
             I presented the experimental results of controlling power converters in settings with low inertia at the DynPower 2024 event. Thanks Peter (Prof. Korba, ZHAW) and Rafael (Dr. Segundo, ZHAW) for the invitation!
           </p>
@@ -230,15 +95,15 @@ span.mycard-title {
   </div>
 </div>
 
-<a id='Jul2024Ir!'> </a>
+<a id=''> </a>
 <div class="card">
   <div class="card-content">
     <div class="row valign-wrapper">
 
         <div class="col s12">
-          <span class="mycard-title">July 2024</span>
+          <span class="mycard-title">2024 July</span>
           <p>
-            I delivered the talk "Increasing energy storage capacity of hydropower plants: a perspective on quick ramping rates" at the workshop "The role of storage capacity of hydropower plants" organized by the PEN@Hydropower association. Thanks Elena (Dr. Vagnoni, EPFL) for the invitation!.
+            I delivered the talk "Increasing energy storage capacity of hydropower plants: a perspective on quick ramping rates" at the workshop "The role of storage capacity of hydropower plants" organized by the PEN@Hydropower association. Thanks Elena (Dr. Vagnoni, EPFL) for the invitation!
           </p>
         </div>
 
@@ -247,13 +112,13 @@ span.mycard-title {
   </div>
 </div>
 
-<a id='Jun2024W,p'> </a>
+<a id=''> </a>
 <div class="card">
   <div class="card-content">
     <div class="row valign-wrapper">
 
         <div class="col s12">
-          <span class="mycard-title">June 2024</span>
+          <span class="mycard-title">2024 June</span>
           <p>
             Welcome, Plouton Grammatikos, in my group!
           </p>
@@ -264,13 +129,13 @@ span.mycard-title {
   </div>
 </div>
 
-<a id='May2024Wtp'> </a>
+<a id=''> </a>
 <div class="card">
   <div class="card-content">
     <div class="row valign-wrapper">
 
         <div class="col s12">
-          <span class="mycard-title">May 2024</span>
+          <span class="mycard-title">2024 May</span>
           <p>
             Welcome to visiting student Florent Gerbal from University of Poiter, working with me for his internship.
           </p>
@@ -281,13 +146,13 @@ span.mycard-title {
   </div>
 </div>
 
-<a id='Apr2024H2y'> </a>
+<a id=''> </a>
 <div class="card">
   <div class="card-content">
     <div class="row valign-wrapper">
 
         <div class="col s12">
-          <span class="mycard-title">April 2024</span>
+          <span class="mycard-title">2024 April</span>
           <p>
             Horizon 2020 project STOR-HY got funded! I will lead a work-package on ageing-aware control strategies for pumped-storage hydropower to increase its flexibility.
           </p>
@@ -298,13 +163,13 @@ span.mycard-title {
   </div>
 </div>
 
-<a id='Feb2024Wts'> </a>
+<a id=''> </a>
 <div class="card">
   <div class="card-content">
     <div class="row valign-wrapper">
 
         <div class="col s12">
-          <span class="mycard-title">February 2024</span>
+          <span class="mycard-title">2024 February</span>
           <p>
             Welcome to the visiting master student Ali Mohamed from KTH/Univ of Lorraine working with me for his master thesis.
           </p>
@@ -315,30 +180,13 @@ span.mycard-title {
   </div>
 </div>
 
-<a id='Nov2023Ne&gt;'> </a>
+<a id=''> </a>
 <div class="card">
   <div class="card-content">
     <div class="row valign-wrapper">
 
         <div class="col s12">
-          <span class="mycard-title">November 2023</span>
-          <p>
-            New project [STORE]. STORE is about to start! STORE aims to identify a functional energy storage infrastructure to achieve 100% production from renewables in Switzerland. The project, which I lead, includes 4 universities and 13 industries. It is financed by Innosuisse in the context of the <a href="https://www.innosuisse.ch/inno/en/home/promotion-of-national-projects/flagship-initiative/ongoing-flagships.html">Flagship Initiative</a>.
-          </p>
-        </div>
-
-
-    </div>
-  </div>
-</div>
-
-<a id='Nov2023Nes'> </a>
-<div class="card">
-  <div class="card-content">
-    <div class="row valign-wrapper">
-
-        <div class="col s12">
-          <span class="mycard-title">November 2023</span>
+          <span class="mycard-title">2023 November</span>
           <p>
             New project [ResiNet]. In ResiNet (More resilient microgrids and grids), together with Prof Luca Haab (HEIA-FR) and Prof Stephan Kenzelmann (HES-SO Valais), we look at how to increase the resiliency of distribution grids under three perspectives: cybersecurity, control of zero-inertia grid, and cooperative distribution grids.
           </p>
@@ -349,13 +197,30 @@ span.mycard-title {
   </div>
 </div>
 
-<a id='Sep2023CuD'> </a>
+<a id=''> </a>
 <div class="card">
   <div class="card-content">
     <div class="row valign-wrapper">
 
         <div class="col s12">
-          <span class="mycard-title">September 2023</span>
+          <span class="mycard-title">2023 November</span>
+          <p>
+            New project [STORE]. STORE is about to start! STORE aims to identify a functional energy storage infrastructure to achieve 100% production from renewables in Switzerland. The project, which I lead, includes 4 universities and 13 industries. It is financed by Innosuisse in the context of the <a href="https://www.innosuisse.ch/inno/en/home/promotion-of-national-projects/flagship-initiative/ongoing-flagships.html">Flagship Initiative</a>.
+          </p>
+        </div>
+
+
+    </div>
+  </div>
+</div>
+
+<a id=''> </a>
+<div class="card">
+  <div class="card-content">
+    <div class="row valign-wrapper">
+
+        <div class="col s12">
+          <span class="mycard-title">2023 September</span>
           <p>
             Congratulations to Stefano Cassano for successfully defending his Ph.D!
           </p>
@@ -366,13 +231,13 @@ span.mycard-title {
   </div>
 </div>
 
-<a id='Jul2023Hen'> </a>
+<a id=''> </a>
 <div class="card">
   <div class="card-content">
     <div class="row valign-wrapper">
 
         <div class="col s12">
-          <span class="mycard-title">July 2023</span>
+          <span class="mycard-title">2023 July</span>
           <p>
             Hosted Wen Yilin, PhD student at Tsinghua Universityv, who visited our lab and gave a seminar on his research about flexibility aggrgeation.
           </p>
@@ -383,13 +248,13 @@ span.mycard-title {
   </div>
 </div>
 
-<a id='Jun2023CuD'> </a>
+<a id=''> </a>
 <div class="card">
   <div class="card-content">
     <div class="row valign-wrapper">
 
         <div class="col s12">
-          <span class="mycard-title">June 2023</span>
+          <span class="mycard-title">2023 June</span>
           <p>
             Congratulations to Biswarup Mukherjee for successfully defending his Ph.D!
           </p>
@@ -400,13 +265,13 @@ span.mycard-title {
   </div>
 </div>
 
-<a id='Apr2023Pia'> </a>
+<a id=''> </a>
 <div class="card">
   <div class="card-content">
     <div class="row valign-wrapper">
 
         <div class="col s12">
-          <span class="mycard-title">April 2023</span>
+          <span class="mycard-title">2023 April</span>
           <p>
             PV magazine covers our work about planning of EV charging stations including PV self consumption. <a href="https://www.pv-magazine.fr/2023/03/28/maximiser-lautoconsommation-solaire-locale-dans-les-infrastructures-de-recharge-ve/">Link to article.</a>
           </p>
@@ -417,13 +282,13 @@ span.mycard-title {
   </div>
 </div>
 
-<a id='Mar2023Nna'> </a>
+<a id=''> </a>
 <div class="card">
   <div class="card-content">
     <div class="row valign-wrapper">
 
         <div class="col s12">
-          <span class="mycard-title">March 2023</span>
+          <span class="mycard-title">2023 March</span>
           <p>
             New journal paper entitled "Optimal Sizing and Siting of Energy Storage Systems Considering Curtailable Photovoltaic Generation in Power Distribution Networks" published in Applied Energy. Congratulations to the first author <a href="https://scholar.google.com/citations?user=FGf5iP8AAAAJ&hl=en&oi=ao">Rahul Gupta</a>! Paper available <a href='/static/repo/papers/j/2023_gupta.pdf'>here</a>
           </p>
@@ -434,13 +299,13 @@ span.mycard-title {
   </div>
 </div>
 
-<a id='Jan2023Nna'> </a>
+<a id=''> </a>
 <div class="card">
   <div class="card-content">
     <div class="row valign-wrapper">
 
         <div class="col s12">
-          <span class="mycard-title">January 2023</span>
+          <span class="mycard-title">2023 January</span>
           <p>
             New journal paper entitled "Optimized Planning of Chargers for Electric Vehicles in Distribution Grids Including PV Self-consumption and Cooperative Vehicle Owners" published in IET Energy Conversion and Economics. Congratulations to the first author <a href="https://biswarupm.github.io">Biswarup Mukherjee</a>! Paper available <a href='/static/repo/papers/j/2023_biswarup.pdf'>here</a>
           </p>
@@ -451,13 +316,13 @@ span.mycard-title {
   </div>
 </div>
 
-<a id='Nov2022Ids'> </a>
+<a id=''> </a>
 <div class="card">
   <div class="card-content">
     <div class="row valign-wrapper">
 
         <div class="col s12">
-          <span class="mycard-title">November 2022</span>
+          <span class="mycard-title">2022 November</span>
           <p>
             I started a new professional appointment at the University of Applied Science of Western Switzerland (HES-SO Valais-Wallis), where I am associate professor of electrical power systems.
           </p>
@@ -468,30 +333,13 @@ span.mycard-title {
   </div>
 </div>
 
-<a id='Mar2022Ies'> </a>
+<a id=''> </a>
 <div class="card">
   <div class="card-content">
     <div class="row valign-wrapper">
 
         <div class="col s12">
-          <span class="mycard-title">March 2022</span>
-          <p>
-            I gave a seminar at the Waterloo Institute of Sustainable Energy (WISE) of the University of Waterloo (Canada) on model predictive control to reduce the fatigue in medium- and high-head hydropower plants' penstocks and coupling with battery energy storage systems.
-          </p>
-        </div>
-
-
-    </div>
-  </div>
-</div>
-
-<a id='Mar2022Nn&gt;'> </a>
-<div class="card">
-  <div class="card-content">
-    <div class="row valign-wrapper">
-
-        <div class="col s12">
-          <span class="mycard-title">March 2022</span>
+          <span class="mycard-title">2022 March</span>
           <p>
             New journal paper: "Stress-informed Control of Medium- and High-head Hydropower Plants to Reduce Penstock Fatigue", available <a href='/static/repo/papers/j/2022_cassano_a.pdf'>here</a>.
           </p>
@@ -502,13 +350,30 @@ span.mycard-title {
   </div>
 </div>
 
-<a id='Feb2022Trl'> </a>
+<a id=''> </a>
 <div class="card">
   <div class="card-content">
     <div class="row valign-wrapper">
 
         <div class="col s12">
-          <span class="mycard-title">February 2022</span>
+          <span class="mycard-title">2022 March</span>
+          <p>
+            I gave a seminar at the Waterloo Institute of Sustainable Energy (WISE) of the University of Waterloo (Canada) on model predictive control to reduce the fatigue in medium- and high-head hydropower plants' penstocks and coupling with battery energy storage systems.
+          </p>
+        </div>
+
+
+    </div>
+  </div>
+</div>
+
+<a id=''> </a>
+<div class="card">
+  <div class="card-content">
+    <div class="row valign-wrapper">
+
+        <div class="col s12">
+          <span class="mycard-title">2022 February</span>
           <p>
             Two papers accepted for the next Power Systems Computation Conference! They are about MPC for hybrid hydropower [<a href='https://arxiv.org/pdf/2111.05004.pdf'>link</a>], and model-less robust voltage control for distribution grids [<a href='https://arxiv.org/pdf/2201.04192.pdf'>link</a>]. Congrats Stefano and Rahul!
           </p>
@@ -519,13 +384,13 @@ span.mycard-title {
   </div>
 </div>
 
-<a id='Jan2022Mrs'> </a>
+<a id=''> </a>
 <div class="card">
   <div class="card-content">
     <div class="row valign-wrapper">
 
         <div class="col s12">
-          <span class="mycard-title">January 2022</span>
+          <span class="mycard-title">2022 January</span>
           <p>
             My research project on integrated energy systems has been funded with € 300'000 by Region Sud - Provence Alpes Cote Cote d'Azur and MINES ParisTech under the framework 'AAP Recherche'. It will support the creation of a beyond-state-of-the-art microgrid laboratory with multiple energy carriers at MINES ParisTech in Sophia Antipolis.
           </p>
@@ -536,13 +401,13 @@ span.mycard-title {
   </div>
 </div>
 
-<a id='Dec2021Ii2'> </a>
+<a id=''> </a>
 <div class="card">
   <div class="card-content">
     <div class="row valign-wrapper">
 
         <div class="col s12">
-          <span class="mycard-title">December 2021</span>
+          <span class="mycard-title">2021 December</span>
           <p>
             I will edit a special issue of IET together with Prof. Zechun Hu (Tsinghua University) on grid integration of electric vehicles. Call for papers will be out in early 2022.
           </p>
@@ -553,30 +418,13 @@ span.mycard-title {
   </div>
 </div>
 
-<a id='Nov2021Bp&gt;'> </a>
+<a id=''> </a>
 <div class="card">
   <div class="card-content">
     <div class="row valign-wrapper">
 
         <div class="col s12">
-          <span class="mycard-title">November 2021</span>
-          <p>
-            Biswarup and I finalized a work on planning of charging infrastructure for electric vehicles and submitted it to IEEE Transactions on Smart Grid. The work is available <a href='/static/repo/papers/j/2021_mukherjee.pdf'>here</a>.
-          </p>
-        </div>
-
-
-    </div>
-  </div>
-</div>
-
-<a id='Nov2021It&gt;'> </a>
-<div class="card">
-  <div class="card-content">
-    <div class="row valign-wrapper">
-
-        <div class="col s12">
-          <span class="mycard-title">November 2021</span>
+          <span class="mycard-title">2021 November</span>
           <p>
             I presented at the wear-and-tear seminar of the H2020 project XFLEX-HYDRO our method for fatigue-informed control of medium- and high-head hydropower plant. Two journal papers covering all aspects of this subject (including using a battery system to reduce penstock stress), authored by Stefano and I, are currently out for revision. Preprints are preliminary available <a href='/static/repo/papers/j/2021_cassano_b.pdf'>here</a> and <a href='/prep/j/2021_cassano_a.pdf'>here</a>.
           </p>
@@ -587,13 +435,30 @@ span.mycard-title {
   </div>
 </div>
 
-<a id='Oct2021Bp)'> </a>
+<a id=''> </a>
 <div class="card">
   <div class="card-content">
     <div class="row valign-wrapper">
 
         <div class="col s12">
-          <span class="mycard-title">October 2021</span>
+          <span class="mycard-title">2021 November</span>
+          <p>
+            Biswarup and I finalized a work on planning of charging infrastructure for electric vehicles and submitted it to IEEE Transactions on Smart Grid. The work is available <a href='/static/repo/papers/j/2021_mukherjee.pdf'>here</a>.
+          </p>
+        </div>
+
+
+    </div>
+  </div>
+</div>
+
+<a id=''> </a>
+<div class="card">
+  <div class="card-content">
+    <div class="row valign-wrapper">
+
+        <div class="col s12">
+          <span class="mycard-title">2021 October</span>
           <p>
             Biswarup and Stefano presented two our papers at the conference ISGT 2021. One is on comparison of smart charging and vehicle-to-grid based on an extensible optimal power flow framework (more <a href='/prep/c/2021_mukherjee.pdf'>here</a>); the other proposes guide vane-to-head and guide-vane-to-torque linearized models of hydropower plants for efficient model-based control (more <a href='/prep/c/2021_cassano.pdf'>here</a>).
           </p>
@@ -604,13 +469,13 @@ span.mycard-title {
   </div>
 </div>
 
-<a id='Sep2021Sae'> </a>
+<a id=''> </a>
 <div class="card">
   <div class="card-content">
     <div class="row valign-wrapper">
 
         <div class="col s12">
-          <span class="mycard-title">September 2021</span>
+          <span class="mycard-title">2021 September</span>
           <p>
             Stefano and I are developing an exciting demonstration of model predictive control (MPC) to reduce the mechanical stress in penstocks. We have set up and instrumented a 15-meter long, 2-inch diameter pipe to reproduce the "water hammer" effects happening in medium- and high-head hydropower plants when they provide regulating power to the power grid. By modeling hydraulic dynamics inside this pipe, we are capable of synthesizing a control law that avoids excessive forces on the pipe walls. In doing so, we increase the service life of this critical component while ensuring maximum flexibility for grid services — exciting stuff and probably an absolute worldwide prime. Stay tuned for more!
           </p>
@@ -621,13 +486,13 @@ span.mycard-title {
   </div>
 </div>
 
-<a id='Apr2021Cgs'> </a>
+<a id=''> </a>
 <div class="card">
   <div class="card-content">
     <div class="row valign-wrapper">
 
         <div class="col s12">
-          <span class="mycard-title">April 2021</span>
+          <span class="mycard-title">2021 April</span>
           <p>
             CapEnergies awarded my research project on "An experimental infrastructure for research on integrated energy systems". CapEnergies is a competitiveness cluster whose direction and evaluation boards are served by major French energy industries. CapEnergies awards projects with demonstrated research excellence and potential for industrial applications and significant socio-economic impacts.
           </p>
@@ -638,30 +503,13 @@ span.mycard-title {
   </div>
 </div>
 
-<a id='Sep2020Or&gt;'> </a>
+<a id=''> </a>
 <div class="card">
   <div class="card-content">
     <div class="row valign-wrapper">
 
         <div class="col s12">
-          <span class="mycard-title">September 2020</span>
-          <p>
-            Our paper was awarded with a top 5% paper mention at the 55th International Universities Power Engineering Conference (UPEC) for the work <a href='/prep/c/2020_cassano.pdf'>Reduction of Penstock Fatigue in a Medium-Head Hydropower Plant Providing Primary Frequency Control</a>.
-          </p>
-        </div>
-
-
-    </div>
-  </div>
-</div>
-
-<a id='Sep2020Its'> </a>
-<div class="card">
-  <div class="card-content">
-    <div class="row valign-wrapper">
-
-        <div class="col s12">
-          <span class="mycard-title">September 2020</span>
+          <span class="mycard-title">2020 September</span>
           <p>
             I presented the invited paper <a href='/prep/c/2020_sossan.pdf'>Impact of the Charging Demand of Electric Vehicles on Distribution Grids: a Comparison Between Autonomous and Non-Autonomous Driving</a> at the 15th International Conference on Ecological Vehicles and Renewable Energies.
           </p>
@@ -672,13 +520,30 @@ span.mycard-title {
   </div>
 </div>
 
-<a id='Aug2020Ity'> </a>
+<a id=''> </a>
 <div class="card">
   <div class="card-content">
     <div class="row valign-wrapper">
 
         <div class="col s12">
-          <span class="mycard-title">August 2020</span>
+          <span class="mycard-title">2020 September</span>
+          <p>
+            Our paper was awarded with a top 5% paper mention at the 55th International Universities Power Engineering Conference (UPEC) for the work <a href='/prep/c/2020_cassano.pdf'>Reduction of Penstock Fatigue in a Medium-Head Hydropower Plant Providing Primary Frequency Control</a>.
+          </p>
+        </div>
+
+
+    </div>
+  </div>
+</div>
+
+<a id=''> </a>
+<div class="card">
+  <div class="card-content">
+    <div class="row valign-wrapper">
+
+        <div class="col s12">
+          <span class="mycard-title">2020 August</span>
           <p>
             I presented my research in the domain of grid-integration of autonomous mobility at the panel "Electric Vehicles as Flexible Demand-side Resources: Research Progress, Obstacles and Pilot Projects" of the 2020 General Meeting of the IEEE Power Engineering Society.
           </p>
@@ -689,13 +554,13 @@ span.mycard-title {
   </div>
 </div>
 
-<a id='Jun2020Woe'> </a>
+<a id=''> </a>
 <div class="card">
   <div class="card-content">
     <div class="row valign-wrapper">
 
         <div class="col s12">
-          <span class="mycard-title">June 2020</span>
+          <span class="mycard-title">2020 June</span>
           <p>
             Website online.
           </p>
@@ -708,21 +573,70 @@ span.mycard-title {
 
 
 
-        <!-- End of main content -->
-      </div>
-    </div>
+    <!-- End of main content -->
+  </div>
 
 
-
-    <!--footer class="page-footer teal lighten-4">
-      <div class="footer-copyright">
-        <div class="container">
-          <span>Fabrizio Sossan, 2020. </span> <span style="float:right">06/11/2024 03:37:02 </span>
+  <footer class="page-footer grey darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <!--<h5 class="white-text">Footer Content</h5>-->
+          <p class="grey-text text-lighten-4">
+            <strong>Prof. Fabrizio Sossan, Ph.D. </strong><br>
+            HES-SO Valais - Wallis <br>
+            23 Rue de l'industrie <br>
+            1950 Sion, Switzerland <br>
+            fabrizio.soss<span id="domain"></span> <br /><br />
+            <script>
+              document.getElementById('domain').innerHTML = 'an@hevs.ch';
+            </script>
+          </p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <!--<h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+          </ul>-->
         </div>
       </div>
-    </footer>-->
+    </div>
+    <div class="footer-copyright black">
+      <div class="container">
+        <span class="grey-text text-lighten-4 left">Latest update: 06/01/2025 20:07:23</span>
+        <span class="grey-text text-lighten-4 right">© 2020 Fabrizio Sossan</span>
+        <!--<a class="grey-text text-lighten-4 right" href="#!">More Links</a>-->
+      </div>
+    </div>
+  </footer>
 
-  </main>
+  
+
+  <script type="text/javascript" src="/static/js/materialize.min.js"></script>
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.sidenav');
+      //var instances = M.Sidenav.init(elems, options);
+      var instances = M.Sidenav.init(elems);
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('select');
+      var instances = M.FormSelect.init(elems);
+    });
+
+    /*document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.parallax');
+      var instances = M.Parallax.init(elems);
+    });*/
+  </script>
+
+  
 
 </body>
+
 </html>

@@ -1,191 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!doctype html>
+<html lang="en">
+
 <head>
   <meta charset="utf-8">
-
-  <!-- generics -->
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/static/img/favicon_io/favicon-32.png" sizes="32x32">
-
-  <!-- Android -->
-  <link rel="shortcut icon" sizes="192x192" href=“/static/img/favicon_io/android-chrome-192.png">
-
-  <!-- iOS -->
-  <link rel="apple-touch-icon" href="/static/img/favicon_io/apple-touch-icon.png" sizes="180x180">
-
-  <!-- Windows 8 IE 10-->
-  <meta name="msapplication-TileColor" content="#FFFFFF">
-  <meta name="msapplication-TileImage" content="/static/img/favicon_io/favicon-144.png">
-
-  <!— Windows 8.1 + IE11 and above —>
-  <meta name="msapplication-config" content="/static/img/favicon_io/browserconfig.xml" />
-
-  <meta name = "viewport" content = "width=device-width, initial-scale = 1">
-  <title>Fabrizio Sossan's personal webpage </title>
-  <meta name="Description" CONTENT="Fabrizio Sossan's personal webpage">
+  <title>Fabrizio Sossan's personal webpage  - Gridlab HES-SO Valais-Wallis</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="/static/materialize/css/materialize.min.css">
-  <script src="/static/materialize/js/materialize.min.js"></script>
+  <link type="text/css" rel="stylesheet" href="/static/css/materialize.min.css" media="screen,projection" />
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-
-  <style>
-
-    /*.valign-wrapper {flex-wrap: wrap;}*/
-
-    a {
-      color: #009688;
-    }
-
-    h4, h5, h6 {
-      color: #004d40;
-    }
-
-    body,html {
-      color: #111111;
-      background-color: #DDDDDD11;
-      height: 100%;
-    }
-
-    .rps {
-      line-height: 125%;
-      margin-left: 5px;
-      text-align: center;
-    }
-
-    li.spacer {
-      flex: 1;
-    }
-
-    header, main, footer {
-      padding-left: 200px;
-    }
-
-    ul.long {
-      display: flex;
-      min-height: 100%;
-      flex-direction: column;
-    }
-
-    @media only screen and (max-width : 980px) {
-      header, main, footer {
-        padding-left: 0;
-      }
-    }
-
-    div.footer {
-      font-size: 13px;
-      line-height: 150%;
-      padding: 10px;
-    }
-
-    div.footer br {
-      margin: 0em;
-    }
-
-
-    ul.bullet {
-      display: block;
-      list-style-type: square !important;
-      margin-left: 0;
-      margin-right: 0;
-      padding-left: 20px;
-    }
-
-    ul.bullet li {
-      margin-bottom: 10px;
-    }
-    ul.bullet li::before {
-      content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-      color: black; /* Change the color */
-      font-weight: bold; /* If you want it to be bold */
-      display: inline-block; /* Needed to add space between the bullet and the text */
-      width: 1em; /* Also needed for space (tweak if needed) */
-      margin-left: -1em; /* Also needed for space (tweak if needed) */
-    }
-
-    .reducednavigation {
-      margin: 1px;
-      padding: 5px;
-    }
-
-
-    #nav-mobile li.entries {
-      margin: 1px;
-      margin-top: 0px;
-      padding: 2px;
-      border-bottom: 3px solid #80cbc444;
-    }
-
-    #nav-mobile li.entries_first {
-      //border-top: 2px solid #80cbc444;
-      margin-top: 5px;
-    }
-
-    .summary {
-      padding:10px;
-      border-radius: 20px;
-      margin-left: -20px;
-      margin-top: 4px;
-    }
-
-  </style>
-
+  <link rel="icon" href="/static/favicon_io/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="/static/favicon_io/site.webmanifest">
 </head>
-<body>
 
-  <header>
-    <div class="container">
-      <a href="#" data-target="nav-mobile" class="top-nav sidenav-trigger circle hide-on-large-only">
-        <i class="material-icons teal lighten-5 normal summary">menu</i>
-      </a>
-      <i class="material-icons teal lighten-5 normal" style="visibility:hidden;">menu</i>
+<style>
+  a {
+    color: #b71c1c;
+    font-weight: 500;
+  }
+</style>
+
+<body class="grey-text text-darken-3">
+  <nav>
+    <div class="nav-wrapper grey darken-4 white-text">
+      <a href="/" class="brand-logo red-text">&nbsp; <i class="material-icons left" style="font-size: 48px;">bolt</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="resources.html">Shared resources</a></li>
+        <li><a href="seminars.html">Seminars</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="static/repo/cv.pdf">CV</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <ul id="nav-mobile" class="sidenav sidenav-fixed long teal lighten-5">
-      <li class="entries entries_first"><a href="/" role="button" class="grey-text text-darken-4"><i class="material-icons left">home</i> Homepage</a></li>
-      <li class="entries"><a href="/resources.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">extension</i> Shared resources</a></li>
-      <li class="entries"><a href="/publications.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">border_color</i>Publications</a></li>
-      <li class="entries"><a href="/students.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">face</i>Students</a></li>
-      <li class="entries"><a href="/teaching.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">local_library</i>Teaching</a></li>
-      <li class="entries"><a href="/projects.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">build</i>Research projects</a></li>
-      <li class="entries"><a href="/seminars.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">directions_walk</i>Seminars & Invited talks</a></li>
-      <li class="entries"><a href="/news.html" role="button" class="grey-text text-darken-4"><i class="material-icons left">event_note</i>News</a></li>
-      <li class="entries"><a href="/static/repo/cv.pdf" role="button" class="grey-text text-darken-4"><i class="material-icons left">school</i>Curriculum Vitae (CV)</a></li>
-      <li class="spacer"> </li>
-      <li>
-        <div class="center footer teal darken-4 white-text text-darken-4" style="border-top: 3px solid #80cbc444">
-          Fabrizio Sossan, 2020. <br/>
-          Latest update: 06/11/2024 03:37:03
-        </div>
-      </li>
-    </ul>
-  </header>
-
-  <script>
-    /*var p = location.pathname.split("/")[1];
-    var el = document.getElementsByTagName('nav')[0].querySelector('a[href=\\/'+p+']');
-    if (el != null) {
-      el.parentElement.setAttribute('class', 'active');
-    }*/
-    document.addEventListener('DOMContentLoaded', function() {
-      var elems = document.querySelectorAll('.sidenav');
-      var instances = M.Sidenav.init(elems);
-    });
-  </script>
-
-
-  <main>
-    <div class="container">
-      <div class="col s12 m10 offset-m1">
-        <h4 class="header">Fabrizio Sossan's personal webpage</h4>
-      </div>
+  <div class="container">
+    <div class="col s12 m10 offset-m1">
+      <h4 class="header">Fabrizio Sossan's personal webpage </h4>
     </div>
+  </div>
 
-    <div class="container">
-      <div class="row">
-        <!-- Main content -->
-        
+  <div class="container">
+    <!-- Main content -->
+    
 
 <script>
 
@@ -200,7 +65,8 @@
     border-radius: 50%;
   }
 
-  .image-cropper img {
+  
+  /*.image-cropper img {
     display: inline;
     margin: 0 auto;
     height: 100%;
@@ -208,7 +74,6 @@
   }
 
   div.rounded {
-    /*border: 3px solid #eeeeee;*/
     border-radius: 25px;
     padding: 10px;
     margin-top: 15px;
@@ -229,7 +94,6 @@
   }
 
   div.myrounded {
-    /*border: 3px solid #eeeeee;*/
     border-radius: 20px;
     padding: 0px !important;
     margin: 0px !important;
@@ -244,10 +108,28 @@
 
   div.myrounded .content {
     margin: 10px;
+  }*/
 
+  ul.bullet {
+    display: block;
+    list-style-type: square !important;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 20px;
   }
 
+  ul.bullet li {
+    margin-bottom: 10px;
+  }
 
+  ul.bullet li::before {
+    content: "\2022";
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
 </style>
 
 
@@ -256,16 +138,23 @@
   <!--<div class="headerpic">
     <img src="/static/img/pics/header.png"/>
   </div>-->
-  <h5>About</h5>
   <p class="light" id="about">
-    I am associate professor of electrical power systems at the <a href="https://www.hes-so.ch/domaines-et-hautes-ecoles/hautes-ecoles/hes-so-valais-wallis/haute-ecole-dingenierie-hei">School of Engineering of the University of Applied Sciences of Western Switzerland</a>.
-    My research interests are planning, scheduling, and control paradigms for distributed energy resources, in particular energy storage, in power and energy networks. My objective is to understand how heterogeneous applications and different operators' objectives can be harmonized 
-    and coordinated to enable feasible techno-economic operations of future energy systems and a transition to renewable resources. <br/><br/>
+    Hello, I am Associate Professor of electrical power systems at the <a
+      href="https://www.hes-so.ch/domaines-et-hautes-ecoles/hautes-ecoles/hes-so-valais-wallis/haute-ecole-dingenierie-hei">University
+      of Applied Sciences of Western Switzerland</a> (HES-SO). I research planning, scheduling, and control paradigms
+    for energy storage and renewable generation in power and energy networks. My aim is to understand how heterogeneous
+    applications and different objectives of grid operators, produceres, end electricity consumers can be harmonized and
+    coordinated to enable feasible techno-economic operations of future power grids and a transition to renewable
+    sources. <br /><br />
 
-    <a href="https://scholar.google.fr/citations?hl=en&user=1VMWrxIAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a> | <a href="https://www.researchgate.net/profile/Fabrizio_Sossan">Research Gate</a> | <a href="https://www.scopus.com/authid/detail.uri?authorId=36915836500">Scopus</a> | <a href="/static/repo/cv.pdf">Curriculum Vitae</a>
+    <a href="https://scholar.google.fr/citations?hl=en&user=1VMWrxIAAAAJ&view_op=list_works&sortby=pubdate">Google
+      Scholar</a> |
+    <a href="https://www.researchgate.net/profile/Fabrizio_Sossan">Research Gate</a> |
+    <a href="https://www.scopus.com/authid/detail.uri?authorId=36915836500">Scopus</a> |
+    <a href="/static/repo/cv.pdf">Curriculum Vitae</a>
   </p>
   <p>
-    <br/>
+    <br />
     In my free time, I like to spend time in <a href="static/mountains/mountains.html">mountains.</a>
   </p>
 </div>
@@ -276,24 +165,23 @@
     <div class="col s6">
       <h5>Contact information</h5>
       Prof. Fabrizio Sossan <br>
-      HES-SO Valais - Wallis  <br>
-      23 Rue de l'industrie  <br>
+      HES-SO Valais - Wallis <br>
+      23 Rue de l'industrie <br>
       1950 Sion, Switzerland <br>
-      fabrizio.soss<span id="domain"></span> <br/><br/>
+      fabrizio.soss<span id="domain"></span> <br /><br />
       <script>
-        document.getElementById('domain').innerHTML='an@hevs.ch';
+        document.getElementById('domain').innerHTML = 'an@hevs.ch';
       </script>
-      <!--<a href="https://goo.gl/maps/6XgAcLL6Sbq5L1qj8" class="waves-effect waves-light btn teal lighten-4 grey-text grey-text text-darken-4"> See on map</a>-->
     </div>
     <div class="col s6">
       <div class="">
         <div class="image-cropper">
-        <img src="/static/img/headshot.jpg" style="height:100%">
+          <img src="/static/img/headshot.jpg" style="height:100%">
         </div>
       </div>
     </div>
   </div>
-<!--<div class="row">
+  <!--<div class="row">
   <div class="col s12">
     <span><b>For students</b> &nbsp;&nbsp; I typically have availabilities for thesis and internships in a variety of areas, from theoretical to experimental. If you are interested in my research topics and pursuing a thesis or internship, and have solid theoretical skills and knowledge of power/energy systems operations and coding skills, drop me an email with a motivation statement.</span>
   </div>
@@ -306,26 +194,40 @@
   <h5>Recent news </h5>
   <ul class="bullet">
     
-    <li>Nov 2024: I gave a talk on the needs for energy storage in distribution grids at the directors of the Swiss-Italian DSOs ... <a href="#" onclick="this.parentNode.style.display='none';this.parentNode.nextSibling.nextSibling.style.display='block'; return false;">read more</a>. </li>
+    <li>Nov 2024: I gave a talk on the needs for energy storage in distribution grids at the directors of the Swiss-Italian DSOs ... <a href="#"
+        onclick="this.parentNode.style.display='none';this.parentNode.nextSibling.nextSibling.style.display='block'; return false;">read
+        more</a>. </li>
     <li style="display:none">Nov 2024: I gave a talk on the needs for energy storage in distribution grids at the directors of the Swiss-Italian DSOs. Thanks <a href="https://www.strom.ch/fr">VSE/AES</a> for the invitation!</li>
     
-    <li>September 2024: I presented the experimental results of controlling power converters in settings with low inertia at the DynPo ... <a href="#" onclick="this.parentNode.style.display='none';this.parentNode.nextSibling.nextSibling.style.display='block'; return false;">read more</a>. </li>
+    <li>September 2024: I presented the experimental results of controlling power converters in settings with low inertia at the DynPo ... <a href="#"
+        onclick="this.parentNode.style.display='none';this.parentNode.nextSibling.nextSibling.style.display='block'; return false;">read
+        more</a>. </li>
     <li style="display:none">September 2024: I presented the experimental results of controlling power converters in settings with low inertia at the DynPower 2024 event. Thanks Peter (Prof. Korba, ZHAW) and Rafael (Dr. Segundo, ZHAW) for the invitation!</li>
     
-    <li>July 2024: I delivered the talk "Increasing energy storage capacity of hydropower plants: a perspective on quick ramping  ... <a href="#" onclick="this.parentNode.style.display='none';this.parentNode.nextSibling.nextSibling.style.display='block'; return false;">read more</a>. </li>
+    <li>July 2024: I delivered the talk "Increasing energy storage capacity of hydropower plants: a perspective on quick ramping  ... <a href="#"
+        onclick="this.parentNode.style.display='none';this.parentNode.nextSibling.nextSibling.style.display='block'; return false;">read
+        more</a>. </li>
     <li style="display:none">July 2024: I delivered the talk "Increasing energy storage capacity of hydropower plants: a perspective on quick ramping rates" at the workshop "The role of storage capacity of hydropower plants" organized by the PEN@Hydropower association. Thanks Elena (Dr. Vagnoni, EPFL) for the invitation!.</li>
     
-    <li>June 2024: Welcome, Plouton Grammatikos, in my group! ... <a href="#" onclick="this.parentNode.style.display='none';this.parentNode.nextSibling.nextSibling.style.display='block'; return false;">read more</a>. </li>
+    <li>June 2024: Welcome, Plouton Grammatikos, in my group! ... <a href="#"
+        onclick="this.parentNode.style.display='none';this.parentNode.nextSibling.nextSibling.style.display='block'; return false;">read
+        more</a>. </li>
     <li style="display:none">June 2024: Welcome, Plouton Grammatikos, in my group!</li>
     
-    <li>May 2024: Welcome to visiting student Florent Gerbal from University of Poiter, working with me for his internship. ... <a href="#" onclick="this.parentNode.style.display='none';this.parentNode.nextSibling.nextSibling.style.display='block'; return false;">read more</a>. </li>
+    <li>May 2024: Welcome to visiting student Florent Gerbal from University of Poiter, working with me for his internship. ... <a href="#"
+        onclick="this.parentNode.style.display='none';this.parentNode.nextSibling.nextSibling.style.display='block'; return false;">read
+        more</a>. </li>
     <li style="display:none">May 2024: Welcome to visiting student Florent Gerbal from University of Poiter, working with me for his internship.</li>
     
-    <li>April 2024: Horizon 2020 project STOR-HY got funded! I will lead a work-package on ageing-aware control strategies for pum ... <a href="#" onclick="this.parentNode.style.display='none';this.parentNode.nextSibling.nextSibling.style.display='block'; return false;">read more</a>. </li>
+    <li>April 2024: Horizon 2020 project STOR-HY got funded! I will lead a work-package on ageing-aware control strategies for pum ... <a href="#"
+        onclick="this.parentNode.style.display='none';this.parentNode.nextSibling.nextSibling.style.display='block'; return false;">read
+        more</a>. </li>
     <li style="display:none">April 2024: Horizon 2020 project STOR-HY got funded! I will lead a work-package on ageing-aware control strategies for pumped-storage hydropower to increase its flexibility.</li>
     
   </ul>
-  <a href="/news.html" class="waves-effect waves-light btn teal lighten-4 grey-text grey-text text-darken-4"> All news </a>
+  <a href="/news.html" class="waves-effect waves-light btn black white-text">
+    All news
+  </a>
 </div>
 
 
@@ -335,7 +237,19 @@
 <div id="intro4" class="scale-transition scale-out rounded">
   <h5>Bio and research experience</h5>
   <p class="light">
-    Fabrizio got his bachelor's and master's degree in Computer Engineering from the University of Genova (Italy) in 2010 and his Ph.D. in Electrical Engineering from the Technical University of Denmark (DTU) in 2014 with a thesis on flexible demand for provision of ancillary services to the power grid. From 2014 to 2017, he was a postdoctoral researcher at EPFL (Switzerland), working on the integration of battery energy storage systems in the grid. In 2018, he was a guest scientist at NREL (USA), working on cooperative dispatch schemes for distribution grids, and, later, a researcher at ETHZ (Switzerland) with the Supply of Electricity program of the Swiss Competence Center for Energy Research. In 2019, he was appointed associate professor at École nationale supérieure des mines de Paris (Mines Paris – PSL, in France). Since 2022, Fabrizio has been an associate professor of power systems with HES-SO Valais – Wallis (Switzerland). In 2020, he co-founded ModBESS, a US-based startup that develops energy monitoring and management systems for residential and commercial microgrids. Working for among the world's most advanced laboratories and experimental facilities with great researchers and colleagues and helping energy systems operators to tackle their challenges shaped Fabrizio's research vision on the methodological barriers we need to tackle to achieve the energy transition.
+    Fabrizio got his bachelor's and master's degree in Computer Engineering from the University of Genova (Italy) in
+    2010 and his Ph.D. in Electrical Engineering from the Technical University of Denmark (DTU) in 2014 with a thesis on
+    flexible demand for provision of ancillary services to the power grid. From 2014 to 2017, he was a postdoctoral
+    researcher at EPFL (Switzerland), working on the integration of battery energy storage systems in the grid. In 2018,
+    he was a guest scientist at NREL (USA), working on cooperative dispatch schemes for distribution grids, and, later,
+    a researcher at ETHZ (Switzerland) with the Supply of Electricity program of the Swiss Competence Center for Energy
+    Research. In 2019, he was appointed associate professor at École nationale supérieure des mines de Paris (Mines
+    Paris – PSL, in France). Since 2022, Fabrizio has been an associate professor of power systems with HES-SO Valais –
+    Wallis (Switzerland). In 2020, he co-founded ModBESS, a US-based startup that develops energy monitoring and
+    management systems for residential and commercial microgrids. Working for among the world's most advanced
+    laboratories and experimental facilities with great researchers and colleagues and helping energy systems operators
+    to tackle their challenges shaped Fabrizio's research vision on the methodological barriers we need to tackle to
+    achieve the energy transition.
   </p>
 </div>
 
@@ -344,7 +258,7 @@
 
 
 <script type="text/javascript">
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function () {
     var elems = document.querySelectorAll('.materialboxed');
     var instances = M.Materialbox.init(elems);
   });
@@ -355,23 +269,23 @@
 
 
 <script type="text/javascript">
-  document.addEventListener('DOMContentLoaded', function() { load_intro(); });
+  document.addEventListener('DOMContentLoaded', function () { load_intro(); });
 
 
   function load_intro() {
-    setTimeout(function(){
+    setTimeout(function () {
       var elem = document.getElementById('intro1');
       elem.classList.add('scale-in');
     }, 200);
-    setTimeout(function(){
+    setTimeout(function () {
       var elem = document.getElementById('intro2');
       elem.classList.add('scale-in');
     }, 400);
-    setTimeout(function(){
+    setTimeout(function () {
       var elem = document.getElementById('intro3');
       elem.classList.add('scale-in');
     }, 800);
-    setTimeout(function(){
+    setTimeout(function () {
       var elem = document.getElementById('intro4');
       elem.classList.add('scale-in');
     }, 1200);
@@ -381,21 +295,70 @@
 
 
 
-        <!-- End of main content -->
-      </div>
-    </div>
+    <!-- End of main content -->
+  </div>
 
 
-
-    <!--footer class="page-footer teal lighten-4">
-      <div class="footer-copyright">
-        <div class="container">
-          <span>Fabrizio Sossan, 2020. </span> <span style="float:right">06/11/2024 03:37:03 </span>
+  <footer class="page-footer grey darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <!--<h5 class="white-text">Footer Content</h5>-->
+          <p class="grey-text text-lighten-4">
+            <strong>Prof. Fabrizio Sossan, Ph.D. </strong><br>
+            HES-SO Valais - Wallis <br>
+            23 Rue de l'industrie <br>
+            1950 Sion, Switzerland <br>
+            fabrizio.soss<span id="domain"></span> <br /><br />
+            <script>
+              document.getElementById('domain').innerHTML = 'an@hevs.ch';
+            </script>
+          </p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <!--<h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+          </ul>-->
         </div>
       </div>
-    </footer>-->
+    </div>
+    <div class="footer-copyright black">
+      <div class="container">
+        <span class="grey-text text-lighten-4 left">Latest update: 06/01/2025 20:07:23</span>
+        <span class="grey-text text-lighten-4 right">© 2020 Fabrizio Sossan</span>
+        <!--<a class="grey-text text-lighten-4 right" href="#!">More Links</a>-->
+      </div>
+    </div>
+  </footer>
 
-  </main>
+  
+
+  <script type="text/javascript" src="/static/js/materialize.min.js"></script>
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.sidenav');
+      //var instances = M.Sidenav.init(elems, options);
+      var instances = M.Sidenav.init(elems);
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('select');
+      var instances = M.FormSelect.init(elems);
+    });
+
+    /*document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.parallax');
+      var instances = M.Parallax.init(elems);
+    });*/
+  </script>
+
+  
 
 </body>
+
 </html>
