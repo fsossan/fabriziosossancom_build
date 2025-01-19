@@ -1,9 +1,3 @@
-# Mountains
-
-A log of (some of my) outings. Entries before approx. 2023 not reported.
-
-([Back to the home page](/))
-
 ## Le petit Velan, couloirs E and W, 7 Jan 2023
 From Bourg St Pierre, little snow in the east couloir, descended west, and closed the loop through the Refuge du Velan.  
 ![alt text](./pic/23petit_velan.png)
@@ -18,7 +12,7 @@ From Bourg St Pierre. Amazing, amazing, amazing!
 
 ![alt text](./pic/23ritord.png)
 
-## Mont Buet, classic itinerary
+## Mont Buet, classic itinerary, 13 Feb 2023
 From Buet-Vallorcine.
 
 ## Tellier, Couloir, 17 Feb 2023
@@ -68,15 +62,12 @@ Single-pitches in Mottarone. Not too great, not too bad.  Good hike.
 
 ![alt text](./pic/23mottarone.png)
 
-## Untracked outings
-Can't remember where we went!
-
 ## Sustenhorn, 22 May 2023
 Through the classic itinerary from Sustenpass. I broke my binding. Good conditions otherwise. 
 
 ![alt text](./pic/23sustenhorn.png)
 
-## Wiwannihorn, weekend of 27 and 28 May 2023
+## Wiwannihorn, 27 May 2023
 Amazing Wiwannihorn! Walking up from the valley, night in the shelter, and two climbing routes (Wi vom Fass, Verborgene Tenze). Still snow on the routes and on the descent. 
 
 ![alt text](./pic/23wiwannihorn.png)
@@ -88,7 +79,7 @@ Traversee from Jungfraujoch to Loetschental. That's the end of an excellent ski-
 ![alt text](./pic/23junlon.png)
 
 
-## Climbing in Grimsel and Orvin, weekend of 3 Jun 2023
+## Climbing in Grimsel and Orvin, 3 Jun 2023
 Attempted Bugeleisen; ended up on the wrong route and gave it up at the 3rd pitch.
 
 ## Sagittarius, 11 Jun 2023
@@ -168,7 +159,7 @@ Turistic outing with my parents to see the north face of Eiger, but not everyone
 ![alt text](./pic/23grindelwald.png)
 
 
-## Nesthorn, South Ridge 20 Aug 2023
+## Nesthorn, South Ridge, 20 Aug 2023
 In 3 day, from Naters. Very pretty and in good conditions. Precautionasly, with 2 ice axes for the way down. In the pic, view on Weissmies from the Gredetschental.
 
 ![alt text](./pic/23nesthorn.png)
@@ -210,7 +201,7 @@ On the way back from Lorenzo and Maria wedding in Bologna, stop in San Domenico 
 ![alt text](./pic/23sandomenico.png)
 
 
-## Brusson and Castore, weekend of 7 Oct 2023
+## Brusson and Castore, 7 Oct 2023
 Visited Giovanni and Elisa in Brusson and used the chance to climb the south ridge of Castore ([this route](https://www.gulliver.it/itinerari/castore-cresta-sud/)). Nice, but a bit sketchy sometimes. Down from the normal way. Slept in the winter room of Rifugio Sella. Down with the jeep from the col di bettaforca.
 
 ![alt text](./pic/23castore.png)
@@ -246,7 +237,7 @@ First ski touring of the season. Little snow.
 ![alt text](./pic/23meniggrat.png)
 
 ## From Greberegg down to Thun lake in Leissigen, 2 Dec 2023 
-If we could sum up all the snow we got this winter, we would have snow until late summer.
+If we could sum up all the snow we got this winter, we would have snow until the summer of next year.
 
 ![alt text](./pic/23leisigen.png)
 
