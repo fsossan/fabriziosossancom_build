@@ -29,18 +29,40 @@
 </style>
 
 <body class="grey-text text-darken-3">
-  <nav>
-    <div class="nav-wrapper grey darken-4 white-text">
-      <a href="/" class="brand-logo red-text">&nbsp; <i class="material-icons left" style="font-size: 48px;">bolt</i></a>
-      <ul id="nav-mobile" class="right">
+
+  <!-- Navigation bar -->
+  <nav class="white z-depth-1">
+    <div class="nav-wrapper black">
+      <a href="/" class="brand-logo red-text">&nbsp; <i class="material-icons left"
+          style="font-size: 48px;">bolt</i></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger button_nav_bar"><i
+          class="material-icons">menu</i></a>
+
+      <!-- Menu -->
+      <ul class="right hide-on-med-and-down">
         <li><a href="publications.html">Publications</a></li>
-        <li><a href="resources.html">Resources</a></li>
+        <li><a href="resources.html">Shared resources</a></li>
         <li><a href="seminars.html">Seminars</a></li>
-        <!--<li><a href="news.html">News</a></li>-->
-        <!--<li><a href="static/repo/cv.pdf">CV</a></li>-->
+        <li><a href="news.html">News</a></li>
+        <li><a href="static/repo/cv.pdf">CV</a></li>
       </ul>
     </div>
   </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="resources.html">Shared resources</a></li>
+    <li><a href="seminars.html">Seminars</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="static/repo/cv.pdf">CV</a></li>
+  </ul>
+
+  <!-- End of navigation bar -->
+
+
+
+
+
 
   <div class="container">
     <div class="col s12 m10 offset-m1">
@@ -55,14 +77,14 @@
 
 
 <style>
-span.mycard-title {
-  font-weight: bold;
-  font-size: 16px;
-}
+  span.mycard-title {
+    font-weight: bold;
+    font-size: 16px;
+  }
 </style>
 
 <h6 class="caption">
-  Freely available software codes and data from papers I have authored or co-authored.
+  Freely available software codes and data from papers I have lead- or co-authored, or other resources.
 </h6>
 
 <div class="row">
@@ -72,13 +94,16 @@ span.mycard-title {
     <div class="card">
       <div class="card-image">
         <a href="https://github.com/fsossan/PV-Disaggregation">
-        <img width="50%" src="static/img/disaggregation.jpg">
+          <img width="50%" src="static/img/disaggregation.jpg">
         </a>
       </div>
       <div class="card-content">
-        <span class="mycard-title"><a href="https://github.com/fsossan/PV-Disaggregation">Disaggregation of PV generation from composite power flow measurements</a></span>
+        <span class="mycard-title"><a href="https://github.com/fsossan/PV-Disaggregation">Disaggregation of PV
+            generation from composite power flow measurements</a></span>
         <p>
-          Interested in estimating (unobserved) PV generation from power consumption measurements of prosumers? If yes, then you might want to try this algorithm  (from <a href="/prep/j/2018_sossan.pdf"> this paper</a>) that uses irradiance measurements and transposition models to explain possible PV generation patterns.
+          Interested in estimating (unobserved) PV generation from power consumption measurements of prosumers? If yes,
+          then you might want to try this algorithm (from <a href="/prep/j/2018_sossan.pdf"> this paper</a>) that uses
+          irradiance measurements and transposition models to explain possible PV generation patterns.
         </p>
       </div>
     </div>
@@ -86,13 +111,16 @@ span.mycard-title {
     <div class="card">
       <div class="card-image">
         <a href="https://github.com/DESL-EPFL/IEEE-39-bus-power-system">
-        <img src="static/img/IEEE39bus.jpg">
+          <img src="static/img/IEEE39bus.jpg">
         </a>
       </div>
       <div class="card-content">
-        <span class="mycard-title"><a href="https://github.com/DESL-EPFL/IEEE-39-bus-power-system">IEEE 39-bus system for OPAL-RT</a></span>
+        <span class="mycard-title"><a href="https://github.com/DESL-EPFL/IEEE-39-bus-power-system">IEEE 39-bus system
+            for OPAL-RT</a></span>
         <p>
-          A detailed model for dynamic power grid studies in low-inertia settings with hydropower and wind generation, and energy storage. Credit to Yihui Zuo, the main developer. More info in <a href="/prep/c/2018_zuo.pdf">this publication</a>.
+          A detailed model for dynamic power grid studies in low-inertia settings with hydropower and wind generation,
+          and energy storage. Credit to Yihui Zuo, the main developer. More info in <a href="/prep/c/2018_zuo.pdf">this
+            publication</a>.
         </p>
       </div>
     </div>
@@ -100,13 +128,18 @@ span.mycard-title {
     <div class="card">
       <div class="card-image">
         <a href="https://data.sccer-jasm.ch/dg-infrastructure-costs/2020-03-02/">
-        <img src="static/img/ch_potential.jpg">
+          <img src="static/img/ch_potential.jpg">
         </a>
       </div>
       <div class="card-content">
-        <span class="mycard-title"><a href="https://data.sccer-jasm.ch/dg-infrastructure-costs/2020-03-02/">Estimated PV hosting capacity for all Swiss medium voltage grids (and their topologies)</a></span>
+        <span class="mycard-title"><a href="https://data.sccer-jasm.ch/dg-infrastructure-costs/2020-03-02/">Estimated PV
+            hosting capacity for all Swiss medium voltage grids (and their topologies)</a></span>
         <p>
-          What is the PV hosting capacity of the existing MV infrastructure? And, how much energy storage do we need to extend it? Estimates for Switzerland are available in this data set. The paper (a prime in this domain) is <a href="/prep/c/2021_gupta.pdf">here</a>. Estimated network topologies and cable properties are available <a href="https://github.com/DESL-EPFL/Estimated-Medium-Voltage-Distribution-Network-Models-for-Switzerland">here</a>. Credit to Rahul Gupta, who developed the code.
+          What is the PV hosting capacity of the existing MV infrastructure? And, how much energy storage do we need to
+          extend it? Estimates for Switzerland are available in this data set. The paper (a prime in this domain) is <a
+            href="/prep/c/2021_gupta.pdf">here</a>. Estimated network topologies and cable properties are available <a
+            href="https://github.com/DESL-EPFL/Estimated-Medium-Voltage-Distribution-Network-Models-for-Switzerland">here</a>.
+          Credit to Rahul Gupta, who developed the code.
         </p>
       </div>
     </div>
@@ -114,17 +147,19 @@ span.mycard-title {
 
 
   <div class="col m12 l6">
-
     <div class="card">
       <div class="card-image">
         <a href="https://zenodo.org/record/3463137#.X-32jy1Q3UK">
-        <img src="static/img/hierarchicaldataset.jpg">
+          <img src="static/img/hierarchicaldataset.jpg">
         </a>
       </div>
       <div class="card-content">
-        <span class="mycard-title"><a href="https://zenodo.org/record/3463137#.X-32jy1Q3UK">Benchmark dataset for hierarchical forecasting of the power demand</a></span>
+        <span class="mycard-title"><a href="https://zenodo.org/record/3463137#.X-32jy1Q3UK">Benchmark dataset for
+            hierarchical forecasting of the power demand</a></span>
         <p>
-          Dataset including hierarchical measurements of the active and reactive power flows, nodal voltages and line currents from a distribution grids. Used to test hierarchical forecasting algorithms for the electrical power demand in <a href="/prep/j/2020_nespoli.pdf"> this paper</a>.
+          Dataset including hierarchical measurements of the active and reactive power flows, nodal voltages and line
+          currents from a distribution grids. Used to test hierarchical forecasting algorithms for the electrical power
+          demand in <a href="/prep/j/2020_nespoli.pdf"> this paper</a>.
         </p>
       </div>
     </div>
@@ -132,13 +167,35 @@ span.mycard-title {
     <div class="card">
       <div class="card-image">
         <a href="https://data.sccer-jasm.ch/pv_production_measurements/2017-10-27/">
-        <img src="static/img/ell.jpg">
+          <img src="static/img/ell.jpg">
         </a>
       </div>
       <div class="card-content">
-        <span class="mycard-title"><a href="https://data.sccer-jasm.ch/pv_production_measurements/2017-10-27/">Production time series for 4 PV plants</a></span>
+        <span class="mycard-title"><a
+            href="https://data.sccer-jasm.ch/pv_production_measurements/2017-10-27/">Production time series for 4 PV
+            plants</a></span>
         <p>
-          Three months of production time series from four distributed rooftop PV power plants collected at EPFL. Details and metadata available at the link. Data were collected when working on this paper <a href="/prep/j/2016_scolari.pdf">here</a>.
+          Three months of production time series from four distributed rooftop PV power plants collected at EPFL.
+          Details and metadata available at the link. Data were collected when working on this paper <a
+            href="/prep/j/2016_scolari.pdf">here</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <a href="https://github.com/fsossan/circuit-macros-wrapper">
+          <img src="static/img/grid.png">
+        </a>
+      </div>
+      <div class="card-content">
+        <span class="mycard-title">
+          <a href="https://github.com/fsossan/circuit-macros-wrapper">
+            Circuit-macros-wrapper
+          </a>
+        </span>
+        <p>
+          A wrapper for the m4 <a href="https://ece.uwaterloo.ca/~aplevich/Circuit_macros/">circuit macros</a> to draw electrical circuits for Latex. It packs the necessary libraries and some utility to compile the m4 scripts.
         </p>
       </div>
     </div>
@@ -182,7 +239,7 @@ span.mycard-title {
     </div>
     <div class="footer-copyright black">
       <div class="container">
-        <span class="grey-text text-lighten-4 left">Latest update: 07/01/2025 10:37:57</span>
+        <span class="grey-text text-lighten-4 left">Latest update: 26/08/2025 15:42:17</span>
         <span class="grey-text text-lighten-4 right">© 2020 FS</span>
         <!--<a class="grey-text text-lighten-4 right" href="#!">More Links</a>-->
       </div>
